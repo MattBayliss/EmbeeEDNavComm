@@ -1,0 +1,803 @@
+2014-11-13 04:43:52Z
+{"Name":"10 Canum Venaticorum","Coordinates":{"X":-9.375,"Y":55.4375,"Z":-7.0}}
+{"Name":"10 Ursae Majoris","Coordinates":{"X":0.03125,"Y":34.90625,"Z":-39.09375}}
+{"Name":"14 Herculis","Coordinates":{"X":-36.71875,"Y":41.6875,"Z":14.125}}
+{"Name":"16 c Ursae Majoris","Coordinates":{"X":-21.375,"Y":41.84375,"Z":-43.21875}}
+{"Name":"17 Crateris","Coordinates":{"X":73.0,"Y":44.125,"Z":17.625}}
+{"Name":"20 Leonis Minoris","Coordinates":{"X":7.78125,"Y":39.40625,"Z":-28.1875}}
+{"Name":"21 Draco","Coordinates":{"X":-60.03125,"Y":45.65625,"Z":8.09375}}
+{"Name":"21 Eta Ursae Minoris","Coordinates":{"X":-74.625,"Y":56.25,"Z":-26.0}}
+{"Name":"24 Iota Crateris","Coordinates":{"X":60.0,"Y":62.65625,"Z":8.375}}
+{"Name":"26 Draconis","Coordinates":{"X":-39.0,"Y":24.90625,"Z":-0.65625}}
+{"Name":"35 Draconis","Coordinates":{"X":-85.125,"Y":51.75,"Z":-28.375}}
+{"Name":"36 Ursae Majoris","Coordinates":{"X":-11.125,"Y":32.9375,"Z":-23.0}}
+{"Name":"37 Xi Bootis","Coordinates":{"X":-4.21875,"Y":19.09375,"Z":9.8125}}
+{"Name":"41 Gamma Serpentis","Coordinates":{"X":-12.125,"Y":26.0,"Z":22.875}}
+{"Name":"44 chi Draconis","Coordinates":{"X":-22.5625,"Y":12.375,"Z":-5.40625}}
+{"Name":"47 Cassiopeiae","Coordinates":{"X":-83.03125,"Y":28.5625,"Z":-63.1875}}
+{"Name":"47 Ursae Majoris","Coordinates":{"X":-1.4375,"Y":41.1875,"Z":-20.09375}}
+{"Name":"54 G, Antlia","Coordinates":{"X":70.375,"Y":24.46875,"Z":-1.09375}}
+{"Name":"59 Virginis","Coordinates":{"X":10.9375,"Y":54.09375,"Z":15.25}}
+{"Name":"60 Tau Draconis","Coordinates":{"X":-129.0,"Y":60.21875,"Z":-34.125}}
+{"Name":"61 Ursae Majoris","Coordinates":{"X":0.5625,"Y":30.09375,"Z":-8.6875}}
+{"Name":"61 Virginis","Coordinates":{"X":14.8125,"Y":19.28125,"Z":13.65625}}
+{"Name":"66 Draconis","Coordinates":{"X":-164.71875,"Y":46.3125,"Z":-16.0625}}
+{"Name":"68 Draconis","Coordinates":{"X":-151.46875,"Y":41.0,"Z":-15.96875}}
+{"Name":"70 Virginis","Coordinates":{"X":5.9375,"Y":56.25,"Z":15.46875}}
+{"Name":"Abrogo","Coordinates":{"X":20.8125,"Y":16.75,"Z":-13.3125}}
+{"Name":"Acihaut","Coordinates":{"X":-18.5,"Y":25.28125,"Z":-4.0}}
+{"Name":"Ackycha","Coordinates":{"X":-29.03125,"Y":39.8125,"Z":-25.03125}}
+{"Name":"Acurukunabogamal","Coordinates":{"X":68.4375,"Y":24.65625,"Z":-1.0625}}
+{"Name":"Adepti","Coordinates":{"X":-74.09375,"Y":36.5625,"Z":-40.1875}}
+{"Name":"Adityaraguala","Coordinates":{"X":-7.09375,"Y":2.25,"Z":-19.96875}}
+{"Name":"Aegilips","Coordinates":{"X":22.96875,"Y":28.9375,"Z":28.40625}}
+{"Name":"Aeneas","Coordinates":{"X":54.40625,"Y":35.90625,"Z":24.9375}}
+{"Name":"Aeolus","Coordinates":{"X":-43.28125,"Y":37.28125,"Z":-31.53125}}
+{"Name":"Aganippe","Coordinates":{"X":-11.5625,"Y":43.8125,"Z":11.625}}
+{"Name":"Agwe","Coordinates":{"X":-48.5625,"Y":47.53125,"Z":-49.125}}
+{"Name":"Akhenaten","Coordinates":{"X":-53.375,"Y":7.84375,"Z":-40.375}}
+{"Name":"Aknango","Coordinates":{"X":-155.40625,"Y":30.0,"Z":-76.4375}}
+{"Name":"Al Mina","Coordinates":{"X":14.4375,"Y":43.78125,"Z":-13.25}}
+{"Name":"Aladu Kuan Gon","Coordinates":{"X":-108.6875,"Y":24.65625,"Z":-20.78125}}
+{"Name":"Alchita","Coordinates":{"X":36.21875,"Y":29.28125,"Z":14.21875}}
+{"Name":"Alcor","Coordinates":{"X":-36.0,"Y":71.90625,"Z":-14.59375}}
+{"Name":"Alderamin","Coordinates":{"X":-47.5,"Y":7.84375,"Z":-9.46875}}
+{"Name":"Algorab","Coordinates":{"X":54.1875,"Y":62.3125,"Z":26.90625}}
+{"Name":"Alrai","Coordinates":{"X":-38.71875,"Y":12.3125,"Z":-21.625}}
+{"Name":"Altais","Coordinates":{"X":-88.625,"Y":38.09375,"Z":-13.65625}}
+{"Name":"Ammapa","Coordinates":{"X":-115.25,"Y":58.125,"Z":-43.28125}}
+{"Name":"Amun","Coordinates":{"X":51.5625,"Y":32.1875,"Z":-27.125}}
+{"Name":"Anaiwal","Coordinates":{"X":-141.78125,"Y":46.34375,"Z":-18.25}}
+{"Name":"Andancan","Coordinates":{"X":-75.0,"Y":43.0,"Z":-63.0}}
+{"Name":"Andoe","Coordinates":{"X":-33.34375,"Y":1.0625,"Z":-26.40625}}
+{"Name":"Anemoi","Coordinates":{"X":-61.375,"Y":22.25,"Z":1.5625}}
+{"Name":"Anete","Coordinates":{"X":41.5625,"Y":13.15625,"Z":-1.6875}}
+{"Name":"Aninohini","Coordinates":{"X":-119.625,"Y":10.375,"Z":-32.375}}
+{"Name":"Anlave","Coordinates":{"X":-25.375,"Y":1.125,"Z":-20.84375}}
+{"Name":"Ansari","Coordinates":{"X":-84.5,"Y":37.59375,"Z":-44.71875}}
+{"Name":"Antevorta","Coordinates":{"X":43.1875,"Y":39.3125,"Z":1.53125}}
+{"Name":"Antinica","Coordinates":{"X":64.5,"Y":62.3125,"Z":-12.625}}
+{"Name":"Anyanwu","Coordinates":{"X":32.15625,"Y":23.09375,"Z":32.1875}}
+{"Name":"Ao Guang","Coordinates":{"X":0.625,"Y":40.03125,"Z":-21.34375}}
+{"Name":"Ao Qin","Coordinates":{"X":-62.90625,"Y":46.78125,"Z":1.53125}}
+{"Name":"Ao Shun","Coordinates":{"X":-75.3125,"Y":22.59375,"Z":1.09375}}
+{"Name":"Apalai","Coordinates":{"X":52.96875,"Y":51.0625,"Z":-16.65625}}
+{"Name":"Apura","Coordinates":{"X":41.8125,"Y":57.34375,"Z":5.40625}}
+{"Name":"Arcturus","Coordinates":{"X":-3.53125,"Y":34.15625,"Z":12.96875}}
+{"Name":"Arin","Coordinates":{"X":1.0625,"Y":3.875,"Z":-9.0}}
+{"Name":"Asellus Primus","Coordinates":{"X":-23.9375,"Y":40.875,"Z":-1.34375}}
+{"Name":"Ashtart","Coordinates":{"X":18.5,"Y":65.84375,"Z":3.28125}}
+{"Name":"Atarapa","Coordinates":{"X":41.5625,"Y":23.5625,"Z":-30.5}}
+{"Name":"Atum","Coordinates":{"X":49.96875,"Y":17.625,"Z":5.59375}}
+{"Name":"Audhisatsuri","Coordinates":{"X":-107.875,"Y":29.5625,"Z":-20.9375}}
+{"Name":"Audusi","Coordinates":{"X":-115.71875,"Y":16.53125,"Z":-21.09375}}
+{"Name":"Aulin","Coordinates":{"X":-19.6875,"Y":32.6875,"Z":4.75}}
+{"Name":"Aulis","Coordinates":{"X":-16.46875,"Y":44.1875,"Z":-11.4375}}
+{"Name":"Aurea","Coordinates":{"X":-88.0,"Y":23.53125,"Z":-8.28125}}
+{"Name":"Aurvandill","Coordinates":{"X":-154.65625,"Y":40.34375,"Z":-82.78125}}
+{"Name":"Awabatamori","Coordinates":{"X":-110.78125,"Y":39.46875,"Z":-35.59375}}
+{"Name":"Awngtei","Coordinates":{"X":-133.5625,"Y":10.21875,"Z":-58.5625}}
+{"Name":"Azaladshu","Coordinates":{"X":60.9375,"Y":10.34375,"Z":-1.09375}}
+{"Name":"Baga","Coordinates":{"X":-110.3125,"Y":15.125,"Z":-45.25}}
+{"Name":"Balmus","Coordinates":{"X":-89.0,"Y":9.375,"Z":-52.0625}}
+{"Name":"Basium","Coordinates":{"X":-71.25,"Y":49.875,"Z":-30.21875}}
+{"Name":"Bast","Coordinates":{"X":-36.46875,"Y":16.15625,"Z":-34.9375}}
+{"Name":"Batani","Coordinates":{"X":-134.03125,"Y":57.34375,"Z":-26.53125}}
+{"Name":"Baudus","Coordinates":{"X":-68.09375,"Y":41.0625,"Z":-30.96875}}
+{"Name":"BD+03 2279","Coordinates":{"X":40.9375,"Y":44.125,"Z":-28.84375}}
+{"Name":"BD+03 2316","Coordinates":{"X":44.71875,"Y":51.34375,"Z":-27.875}}
+{"Name":"BD+16 2404","Coordinates":{"X":8.875,"Y":45.1875,"Z":3.9375}}
+{"Name":"BD+26 2184","Coordinates":{"X":13.21875,"Y":64.21875,"Z":-21.0625}}
+{"Name":"BD+27 1739","Coordinates":{"X":15.53125,"Y":42.78125,"Z":-43.15625}}
+{"Name":"BD+29 2405","Coordinates":{"X":-6.28125,"Y":60.8125,"Z":5.5}}
+{"Name":"BD+47 2112","Coordinates":{"X":-14.78125,"Y":33.46875,"Z":-0.40625}}
+{"Name":"BD+55 1519","Coordinates":{"X":-16.9375,"Y":44.71875,"Z":-16.59375}}
+{"Name":"BD+57 2595","Coordinates":{"X":-110.40625,"Y":-1.25,"Z":-34.25}}
+{"Name":"BD+63 1764","Coordinates":{"X":-113.25,"Y":16.78125,"Z":-28.34375}}
+{"Name":"BD+64 1452","Coordinates":{"X":-98.5625,"Y":25.6875,"Z":-17.40625}}
+{"Name":"BD+65 1846","Coordinates":{"X":-60.3125,"Y":7.125,"Z":-25.53125}}
+{"Name":"BD+66 193","Coordinates":{"X":-57.53125,"Y":8.625,"Z":-50.21875}}
+{"Name":"BD+67 1409","Coordinates":{"X":-89.4375,"Y":16.0625,"Z":-30.25}}
+{"Name":"BD+71 1033","Coordinates":{"X":-104.125,"Y":33.875,"Z":-30.9375}}
+{"Name":"BD+72 545","Coordinates":{"X":-48.375,"Y":61.71875,"Z":-40.21875}}
+{"Name":"BD+74 526","Coordinates":{"X":-48.65625,"Y":53.28125,"Z":-29.25}}
+{"Name":"BD+75 58","Coordinates":{"X":-43.5625,"Y":13.46875,"Z":-30.46875}}
+{"Name":"BD+87 118","Coordinates":{"X":-58.59375,"Y":40.65625,"Z":-37.75}}
+{"Name":"BD-01 2784","Coordinates":{"X":23.84375,"Y":57.78125,"Z":23.71875}}
+{"Name":"BD-18 3106","Coordinates":{"X":48.46875,"Y":36.875,"Z":2.0625}}
+{"Name":"Begou","Coordinates":{"X":-141.125,"Y":-1.8125,"Z":-53.8125}}
+{"Name":"Belobog","Coordinates":{"X":-13.34375,"Y":53.78125,"Z":12.5625}}
+{"Name":"Beta Comae Berenices","Coordinates":{"X":-1.6875,"Y":29.65625,"Z":2.03125}}
+{"Name":"BF Canis Venatici","Coordinates":{"X":-8.25,"Y":62.1875,"Z":-3.0625}}
+{"Name":"Bhaguti","Coordinates":{"X":41.6875,"Y":36.3125,"Z":18.9375}}
+{"Name":"Bhotega","Coordinates":{"X":-55.21875,"Y":14.5,"Z":-25.15625}}
+{"Name":"Bhotepa","Coordinates":{"X":-109.15625,"Y":35.96875,"Z":-59.375}}
+{"Name":"Binbeal","Coordinates":{"X":-172.875,"Y":11.25,"Z":-51.125}}
+{"Name":"Bingui","Coordinates":{"X":59.125,"Y":38.5,"Z":-4.625}}
+{"Name":"Blata","Coordinates":{"X":-152.90625,"Y":21.71875,"Z":-12.6875}}
+{"Name":"Blatrimpe","Coordinates":{"X":29.125,"Y":11.3125,"Z":-15.875}}
+{"Name":"Bogatiku","Coordinates":{"X":-126.625,"Y":45.71875,"Z":-12.5625}}
+{"Name":"Bolg","Coordinates":{"X":-7.90625,"Y":34.71875,"Z":2.125}}
+{"Name":"Borom Caquit","Coordinates":{"X":22.1875,"Y":69.5625,"Z":-6.4375}}
+{"Name":"Bragurom Du","Coordinates":{"X":17.4375,"Y":61.1875,"Z":-6.53125}}
+{"Name":"Brahma","Coordinates":{"X":13.28125,"Y":45.25,"Z":17.65625}}
+{"Name":"Bugas","Coordinates":{"X":12.59375,"Y":24.34375,"Z":2.84375}}
+{"Name":"Bumbo","Coordinates":{"X":-92.0625,"Y":35.0,"Z":-64.28125}}
+{"Name":"Bunda","Coordinates":{"X":65.625,"Y":17.96875,"Z":24.96875}}
+{"Name":"Buryacuan Wu","Coordinates":{"X":67.53125,"Y":25.0,"Z":24.625}}
+{"Name":"Caeronthudti","Coordinates":{"X":32.25,"Y":14.90625,"Z":-13.5}}
+{"Name":"Caicius","Coordinates":{"X":41.0625,"Y":48.03125,"Z":18.96875}}
+{"Name":"Caluayaksheper","Coordinates":{"X":-83.375,"Y":21.5625,"Z":-41.09375}}
+{"Name":"Candjinan","Coordinates":{"X":-143.25,"Y":30.9375,"Z":-68.6875}}
+{"Name":"Carnoeck","Coordinates":{"X":35.96875,"Y":5.1875,"Z":1.3125}}
+{"Name":"Carnutenichuara","Coordinates":{"X":-128.46875,"Y":33.9375,"Z":-19.46875}}
+{"Name":"Catuntinigi","Coordinates":{"X":-52.65625,"Y":30.78125,"Z":-51.90625}}
+{"Name":"Cavashira","Coordinates":{"X":-171.0625,"Y":43.28125,"Z":-34.96875}}
+{"Name":"Cavins","Coordinates":{"X":27.0,"Y":8.78125,"Z":-7.0625}}
+{"Name":"CD-35 6972","Coordinates":{"X":81.71875,"Y":34.21875,"Z":15.375}}
+{"Name":"CE Bootis","Coordinates":{"X":-5.40625,"Y":29.375,"Z":16.46875}}
+{"Name":"Cenil","Coordinates":{"X":55.84375,"Y":45.4375,"Z":-26.53125}}
+{"Name":"Chapoyo","Coordinates":{"X":-100.375,"Y":34.46875,"Z":-40.09375}}
+{"Name":"Chara","Coordinates":{"X":-4.84375,"Y":26.65625,"Z":-4.78125}}
+{"Name":"Chaxiraxi","Coordinates":{"X":-9.84375,"Y":66.53125,"Z":5.75}}
+{"Name":"Chechehet","Coordinates":{"X":-106.5625,"Y":24.625,"Z":-27.90625}}
+{"Name":"Chelmen","Coordinates":{"X":-65.96875,"Y":47.78125,"Z":-56.875}}
+{"Name":"Chemaku","Coordinates":{"X":-77.5625,"Y":6.5625,"Z":-10.53125}}
+{"Name":"Chi Herculis","Coordinates":{"X":-30.75,"Y":39.71875,"Z":12.78125}}
+{"Name":"Chini","Coordinates":{"X":52.75,"Y":43.65625,"Z":-31.46875}}
+{"Name":"Chongquan","Coordinates":{"X":-20.78125,"Y":13.1875,"Z":-37.4375}}
+{"Name":"Chontantici","Coordinates":{"X":49.8125,"Y":37.96875,"Z":21.84375}}
+{"Name":"Choujemait","Coordinates":{"X":-114.59375,"Y":3.0625,"Z":-40.96875}}
+{"Name":"Chaac","Coordinates":{"X":0.4375,"Y":63.21875,"Z":-9.5}}
+{"Name":"Ciguru","Coordinates":{"X":-82.40625,"Y":3.875,"Z":-8.90625}}
+{"Name":"Circios","Coordinates":{"X":-3.9375,"Y":54.5,"Z":-37.03125}}
+{"Name":"CM Draco","Coordinates":{"X":-35.6875,"Y":30.9375,"Z":2.15625}}
+{"Name":"Coelrind","Coordinates":{"X":3.0625,"Y":35.28125,"Z":6.96875}}
+{"Name":"Coriccha","Coordinates":{"X":-14.40625,"Y":19.9375,"Z":7.0}}
+{"Name":"Corioskeh Tryth","Coordinates":{"X":-118.25,"Y":33.34375,"Z":-23.65625}}
+{"Name":"CPD-23 501","Coordinates":{"X":60.59375,"Y":35.3125,"Z":0.625}}
+{"Name":"CR Draco","Coordinates":{"X":-49.46875,"Y":47.4375,"Z":4.375}}
+{"Name":"CR Draconis","Coordinates":{"X":-48.3125,"Y":46.15625,"Z":4.46875}}
+{"Name":"Cuages","Coordinates":{"X":-137.78125,"Y":21.71875,"Z":-14.90625}}
+{"Name":"CW Ursae Majoris","Coordinates":{"X":2.65625,"Y":36.78125,"Z":-14.90625}}
+{"Name":"Cybele","Coordinates":{"X":33.125,"Y":54.46875,"Z":25.03125}}
+{"Name":"Czernovale","Coordinates":{"X":40.53125,"Y":37.53125,"Z":19.5}}
+{"Name":"Dagaz","Coordinates":{"X":30.15625,"Y":55.0,"Z":15.3125}}
+{"Name":"Dahan","Coordinates":{"X":-19.75,"Y":41.78125,"Z":-3.1875}}
+{"Name":"Dakantjarini","Coordinates":{"X":-93.28125,"Y":62.96875,"Z":-32.0625}}
+{"Name":"Darahk","Coordinates":{"X":-65.0,"Y":27.0,"Z":-37.0}}
+{"Name":"Demeter","Coordinates":{"X":-55.34375,"Y":40.8125,"Z":7.5625}}
+{"Name":"Denebola","Coordinates":{"X":11.09375,"Y":33.90625,"Z":-3.5}}
+{"Name":"Dierfar","Coordinates":{"X":73.375,"Y":38.71875,"Z":10.8125}}
+{"Name":"Difu","Coordinates":{"X":-34.40625,"Y":1.4375,"Z":-27.875}}
+{"Name":"Divja Mu","Coordinates":{"X":-92.3125,"Y":13.4375,"Z":-16.8125}}
+{"Name":"Djedet","Coordinates":{"X":-92.84375,"Y":22.8125,"Z":-22.3125}}
+{"Name":"DN Draconis","Coordinates":{"X":-27.09375,"Y":21.625,"Z":0.78125}}
+{"Name":"Doris","Coordinates":{"X":-38.875,"Y":69.03125,"Z":-13.375}}
+{"Name":"DP Draconis","Coordinates":{"X":-17.5,"Y":25.96875,"Z":-11.375}}
+{"Name":"DT Virginis","Coordinates":{"X":6.9375,"Y":35.03125,"Z":6.21875}}
+{"Name":"Duamta","Coordinates":{"X":2.1875,"Y":6.625,"Z":-7.0}}
+{"Name":"DX 799","Coordinates":{"X":-22.96875,"Y":12.3125,"Z":-17.90625}}
+{"Name":"DX Cancri","Coordinates":{"X":2.90625,"Y":6.3125,"Z":-9.5625}}
+{"Name":"Dyaushis","Coordinates":{"X":-50.0625,"Y":8.375,"Z":-41.78125}}
+{"Name":"EGGR 431","Coordinates":{"X":31.6875,"Y":36.75,"Z":-28.40625}}
+{"Name":"Egovedunuvitra","Coordinates":{"X":-117.375,"Y":23.1875,"Z":-6.6875}}
+{"Name":"Ehlangai","Coordinates":{"X":-51.53125,"Y":35.15625,"Z":-46.125}}
+{"Name":"Eme","Coordinates":{"X":33.71875,"Y":26.21875,"Z":4.03125}}
+{"Name":"Enumclawilya","Coordinates":{"X":-116.875,"Y":15.25,"Z":-36.03125}}
+{"Name":"Eos","Coordinates":{"X":-51.875,"Y":16.78125,"Z":-0.375}}
+{"Name":"Eranin","Coordinates":{"X":-22.84375,"Y":36.53125,"Z":-1.1875}}
+{"Name":"Eravarenth","Coordinates":{"X":66.84375,"Y":21.84375,"Z":27.46875}}
+{"Name":"Erlaza","Coordinates":{"X":28.25,"Y":22.59375,"Z":30.375}}
+{"Name":"Eta Cephei","Coordinates":{"X":-45.125,"Y":9.375,"Z":-6.4375}}
+{"Name":"Eta Corvi","Coordinates":{"X":36.71875,"Y":43.03125,"Z":18.78125}}
+{"Name":"Eta Draconis","Coordinates":{"X":-69.53125,"Y":60.28125,"Z":-2.9375}}
+{"Name":"Etznabihik Mangk","Coordinates":{"X":54.125,"Y":62.375,"Z":6.4375}}
+{"Name":"Evergreen","Coordinates":{"X":-86.6875,"Y":25.34375,"Z":-3.3125}}
+{"Name":"Exbeur","Coordinates":{"X":-35.15625,"Y":27.84375,"Z":-33.65625}}
+{"Name":"FAUST 2688","Coordinates":{"X":62.5,"Y":51.4375,"Z":-11.46875}}
+{"Name":"Feng Huang","Coordinates":{"X":74.53125,"Y":40.125,"Z":-20.4375}}
+{"Name":"Fianna","Coordinates":{"X":28.5625,"Y":27.34375,"Z":11.0}}
+{"Name":"Fionn","Coordinates":{"X":32.5,"Y":9.3125,"Z":-22.75}}
+{"Name":"Flousop","Coordinates":{"X":-1.625,"Y":16.8125,"Z":4.0}}
+{"Name":"FN Virginis","Coordinates":{"X":7.5625,"Y":24.6875,"Z":6.15625}}
+{"Name":"Friggirawi","Coordinates":{"X":-112.21875,"Y":38.3125,"Z":-19.875}}
+{"Name":"Fu Haiting","Coordinates":{"X":-103.0,"Y":29.46875,"Z":-43.4375}}
+{"Name":"G 113-20","Coordinates":{"X":18.78125,"Y":10.09375,"Z":-20.75}}
+{"Name":"G 121-8","Coordinates":{"X":9.1875,"Y":58.75,"Z":-10.59375}}
+{"Name":"G 123-49","Coordinates":{"X":-18.90625,"Y":66.875,"Z":-14.78125}}
+{"Name":"G 14-6","Coordinates":{"X":13.5,"Y":30.375,"Z":9.0625}}
+{"Name":"G 146-5","Coordinates":{"X":-7.375,"Y":53.9375,"Z":-43.03125}}
+{"Name":"G 175-42","Coordinates":{"X":-14.65625,"Y":2.5,"Z":-29.46875}}
+{"Name":"G 180-18","Coordinates":{"X":-28.96875,"Y":40.6875,"Z":19.03125}}
+{"Name":"G 181-6","Coordinates":{"X":-20.3125,"Y":20.3125,"Z":14.0625}}
+{"Name":"G 203-47","Coordinates":{"X":-18.34375,"Y":14.25,"Z":7.09375}}
+{"Name":"G 224-46","Coordinates":{"X":-55.25,"Y":60.34375,"Z":-12.71875}}
+{"Name":"G 230-27","Coordinates":{"X":-58.125,"Y":11.4375,"Z":2.6875}}
+{"Name":"G 239-25","Coordinates":{"X":-22.6875,"Y":25.8125,"Z":-6.6875}}
+{"Name":"G 250-34","Coordinates":{"X":-27.28125,"Y":25.90625,"Z":-44.5}}
+{"Name":"G 65-9","Coordinates":{"X":9.53125,"Y":42.34375,"Z":20.34375}}
+{"Name":"G 89-32","Coordinates":{"X":10.28125,"Y":4.59375,"Z":-16.6875}}
+{"Name":"GCRV 13292","Coordinates":{"X":-99.84375,"Y":27.5625,"Z":-28.1875}}
+{"Name":"GD 140","Coordinates":{"X":4.84375,"Y":49.5625,"Z":-13.3125}}
+{"Name":"GD 319","Coordinates":{"X":-19.375,"Y":43.625,"Z":-12.75}}
+{"Name":"Gendalla","Coordinates":{"X":12.0,"Y":9.96875,"Z":-5.53125}}
+{"Name":"Gendini","Coordinates":{"X":-122.5625,"Y":48.5,"Z":-34.5625}}
+{"Name":"Gera","Coordinates":{"X":-88.8125,"Y":11.6875,"Z":-33.59375}}
+{"Name":"Gliese 3371","Coordinates":{"X":-17.71875,"Y":12.96875,"Z":-38.3125}}
+{"Name":"Gliese 9843","Coordinates":{"X":-106.25,"Y":33.59375,"Z":-61.0}}
+{"Name":"Gomm Crua","Coordinates":{"X":-41.46875,"Y":27.21875,"Z":-51.15625}}
+{"Name":"Gong Gu","Coordinates":{"X":-88.90625,"Y":26.1875,"Z":-4.6875}}
+{"Name":"GQ Virginis","Coordinates":{"X":12.15625,"Y":27.3125,"Z":23.28125}}
+{"Name":"Grabri","Coordinates":{"X":-97.71875,"Y":43.65625,"Z":-15.78125}}
+{"Name":"Groombridge 1618","Coordinates":{"X":-2.34375,"Y":12.625,"Z":-9.34375}}
+{"Name":"Guangul","Coordinates":{"X":-27.5,"Y":14.3125,"Z":-2.28125}}
+{"Name":"Gunnovii","Coordinates":{"X":-114.40625,"Y":37.25,"Z":-1.71875}}
+{"Name":"Guy","Coordinates":{"X":26.71875,"Y":14.25,"Z":7.375}}
+{"Name":"h Draconis","Coordinates":{"X":-39.84375,"Y":29.5625,"Z":-3.90625}}
+{"Name":"Hach","Coordinates":{"X":-73.0625,"Y":13.28125,"Z":-8.25}}
+{"Name":"Hadad","Coordinates":{"X":9.875,"Y":57.84375,"Z":20.59375}}
+{"Name":"Haeditjaray","Coordinates":{"X":-163.0625,"Y":14.03125,"Z":-64.5625}}
+{"Name":"Hagalaz","Coordinates":{"X":-50.59375,"Y":45.15625,"Z":11.09375}}
+{"Name":"Haidjaram","Coordinates":{"X":-126.3125,"Y":57.28125,"Z":-24.1875}}
+{"Name":"Hambula","Coordinates":{"X":-39.65625,"Y":6.125,"Z":-2.5}}
+{"Name":"Haokah","Coordinates":{"X":-22.1875,"Y":37.625,"Z":-47.3125}}
+{"Name":"Hared","Coordinates":{"X":-97.125,"Y":22.75,"Z":-20.0}}
+{"Name":"Haribaluayai","Coordinates":{"X":-150.375,"Y":30.3125,"Z":-13.9375}}
+{"Name":"Havat","Coordinates":{"X":-107.0,"Y":15.3125,"Z":-39.71875}}
+{"Name":"HDS 1879","Coordinates":{"X":-38.125,"Y":69.1875,"Z":-17.09375}}
+{"Name":"Heheng De","Coordinates":{"X":-119.34375,"Y":31.71875,"Z":-9.625}}
+{"Name":"Helios","Coordinates":{"X":32.34375,"Y":42.1875,"Z":-11.28125}}
+{"Name":"Hera","Coordinates":{"X":-36.8125,"Y":55.59375,"Z":-17.96875}}
+{"Name":"Hermitage","Coordinates":{"X":-28.75,"Y":25.0,"Z":10.4375}}
+{"Name":"HIP 105557","Coordinates":{"X":-113.53125,"Y":41.21875,"Z":-45.6875}}
+{"Name":"HIP 105906","Coordinates":{"X":-114.40625,"Y":51.40625,"Z":-56.125}}
+{"Name":"HIP 107457","Coordinates":{"X":-116.25,"Y":28.34375,"Z":-39.3125}}
+{"Name":"HIP 108110","Coordinates":{"X":-122.625,"Y":22.0,"Z":-37.34375}}
+{"Name":"HIP 109479","Coordinates":{"X":-127.5,"Y":29.875,"Z":-48.5}}
+{"Name":"HIP 110773","Coordinates":{"X":-120.375,"Y":46.375,"Z":-60.6875}}
+{"Name":"HIP 111496","Coordinates":{"X":-136.75,"Y":13.71875,"Z":-47.53125}}
+{"Name":"HIP 113477","Coordinates":{"X":-121.40625,"Y":19.78125,"Z":-52.46875}}
+{"Name":"HIP 113905","Coordinates":{"X":-140.3125,"Y":36.9375,"Z":-68.5}}
+{"Name":"HIP 114099","Coordinates":{"X":-153.28125,"Y":26.65625,"Z":-69.34375}}
+{"Name":"HIP 114769","Coordinates":{"X":-155.5,"Y":13.5625,"Z":-67.34375}}
+{"Name":"HIP 2422","Coordinates":{"X":-103.21875,"Y":31.34375,"Z":-64.375}}
+{"Name":"HIP 2453","Coordinates":{"X":-110.90625,"Y":16.5,"Z":-67.84375}}
+{"Name":"HIP 4907","Coordinates":{"X":-68.3125,"Y":9.625,"Z":-46.5}}
+{"Name":"HIP 7338","Coordinates":{"X":-96.5,"Y":33.21875,"Z":-68.65625}}
+{"Name":"HIP 85887","Coordinates":{"X":-110.34375,"Y":69.90625,"Z":-31.375}}
+{"Name":"HIP 91906","Coordinates":{"X":-108.09375,"Y":57.1875,"Z":-33.59375}}
+{"Name":"HIP 93119","Coordinates":{"X":-113.5625,"Y":57.40625,"Z":-33.9375}}
+{"Name":"Hlocidirus","Coordinates":{"X":30.96875,"Y":19.78125,"Z":-29.78125}}
+{"Name":"Hlooyn","Coordinates":{"X":2.15625,"Y":66.21875,"Z":-26.84375}}
+{"Name":"Holiacan","Coordinates":{"X":-51.25,"Y":67.34375,"Z":-21.46875}}
+{"Name":"HR 158","Coordinates":{"X":-85.875,"Y":36.90625,"Z":-55.09375}}
+{"Name":"HR 3862","Coordinates":{"X":44.34375,"Y":18.09375,"Z":-10.03125}}
+{"Name":"HR 3991","Coordinates":{"X":71.8125,"Y":51.0,"Z":-20.59375}}
+{"Name":"HR 4979","Coordinates":{"X":48.28125,"Y":28.03125,"Z":37.75}}
+{"Name":"HR 7925","Coordinates":{"X":-104.53125,"Y":21.0625,"Z":-12.1875}}
+{"Name":"HR 8133","Coordinates":{"X":-133.875,"Y":26.28125,"Z":-28.96875}}
+{"Name":"HR 8423","Coordinates":{"X":-105.375,"Y":48.25,"Z":-55.53125}}
+{"Name":"HR 8472","Coordinates":{"X":-118.84375,"Y":1.125,"Z":-26.875}}
+{"Name":"HR 8474","Coordinates":{"X":-97.96875,"Y":21.3125,"Z":-36.125}}
+{"Name":"Hsien Baji","Coordinates":{"X":-49.1875,"Y":20.21875,"Z":-43.625}}
+{"Name":"Hun Banja","Coordinates":{"X":-84.4375,"Y":16.90625,"Z":-60.40625}}
+{"Name":"Huokang","Coordinates":{"X":-12.1875,"Y":35.46875,"Z":-25.28125}}
+{"Name":"Hyperion","Coordinates":{"X":-51.1875,"Y":7.5,"Z":-16.71875}}
+{"Name":"i Bootis","Coordinates":{"X":-22.375,"Y":34.84375,"Z":4.0}}
+{"Name":"Igororai","Coordinates":{"X":-176.25,"Y":30.75,"Z":-71.59375}}
+{"Name":"Ikpenones","Coordinates":{"X":-39.375,"Y":31.5625,"Z":-45.09375}}
+{"Name":"Issin","Coordinates":{"X":-45.1875,"Y":56.3125,"Z":-42.84375}}
+{"Name":"Istanu","Coordinates":{"X":2.0625,"Y":55.15625,"Z":1.28125}}
+{"Name":"Ithaca","Coordinates":{"X":-8.09375,"Y":44.9375,"Z":-9.28125}}
+{"Name":"Jaitu","Coordinates":{"X":-102.15625,"Y":21.75,"Z":-17.3125}}
+{"Name":"Janjak","Coordinates":{"X":-121.96875,"Y":16.03125,"Z":-71.40625}}
+{"Name":"Jata","Coordinates":{"X":-28.375,"Y":-112.53125,"Z":98.4375}}
+{"Name":"Jeidrungaragototo","Coordinates":{"X":-145.5,"Y":24.21875,"Z":-19.25}}
+{"Name":"Jetes","Coordinates":{"X":-141.21875,"Y":16.28125,"Z":-59.3125}}
+{"Name":"Jok Islese","Coordinates":{"X":70.15625,"Y":51.5625,"Z":9.5}}
+{"Name":"Jolangen","Coordinates":{"X":31.59375,"Y":29.3125,"Z":35.0}}
+{"Name":"Juipedun","Coordinates":{"X":-90.34375,"Y":39.75,"Z":-61.375}}
+{"Name":"Jula Oh","Coordinates":{"X":-184.0,"Y":44.78125,"Z":-58.1875}}
+{"Name":"Jun","Coordinates":{"X":-126.0,"Y":29.21875,"Z":-4.0}}
+{"Name":"Jungkurara","Coordinates":{"X":-161.6875,"Y":22.65625,"Z":-42.0625}}
+{"Name":"K Camelopardalis","Coordinates":{"X":-45.21875,"Y":26.625,"Z":-43.46875}}
+{"Name":"Kaha'i","Coordinates":{"X":-7.03125,"Y":60.8125,"Z":-21.8125}}
+{"Name":"Kali","Coordinates":{"X":33.59375,"Y":57.375,"Z":-28.84375}}
+{"Name":"Kamchaultultula","Coordinates":{"X":-82.0625,"Y":1.625,"Z":-14.4375}}
+{"Name":"Kanati","Coordinates":{"X":74.125,"Y":46.1875,"Z":-19.46875}}
+{"Name":"Kanos","Coordinates":{"X":41.375,"Y":53.65625,"Z":-12.65625}}
+{"Name":"Karovices","Coordinates":{"X":-102.4375,"Y":6.9375,"Z":-14.875}}
+{"Name":"Kassi Hua","Coordinates":{"X":-100.15625,"Y":35.8125,"Z":-62.0625}}
+{"Name":"Katae","Coordinates":{"X":-27.90625,"Y":61.21875,"Z":-11.125}}
+{"Name":"Kato","Coordinates":{"X":-181.03125,"Y":26.3125,"Z":-20.78125}}
+{"Name":"Keiadjara","Coordinates":{"X":-114.125,"Y":28.90625,"Z":-56.59375}}
+{"Name":"Keian Gu","Coordinates":{"X":-63.71875,"Y":22.46875,"Z":-44.0625}}
+{"Name":"Keling","Coordinates":{"X":-133.25,"Y":61.9375,"Z":-38.09375}}
+{"Name":"Keries","Coordinates":{"X":-18.90625,"Y":27.21875,"Z":12.59375}}
+{"Name":"Khernidjal","Coordinates":{"X":-35.9375,"Y":70.5625,"Z":-7.65625}}
+{"Name":"Kholedo","Coordinates":{"X":-95.09375,"Y":33.5625,"Z":-7.15625}}
+{"Name":"Khong Qin Gu","Coordinates":{"X":-102.1875,"Y":20.1875,"Z":-23.125}}
+{"Name":"Kishia","Coordinates":{"X":-107.9375,"Y":5.96875,"Z":-47.71875}}
+{"Name":"Kokobujundji","Coordinates":{"X":-122.28125,"Y":59.8125,"Z":-19.15625}}
+{"Name":"Kokoto","Coordinates":{"X":39.15625,"Y":40.5,"Z":28.0}}
+{"Name":"Kongi","Coordinates":{"X":-149.21875,"Y":14.25,"Z":-45.125}}
+{"Name":"Korubu","Coordinates":{"X":-86.53125,"Y":39.0625,"Z":-8.78125}}
+{"Name":"Kotaition","Coordinates":{"X":-100.84375,"Y":35.5,"Z":-36.34375}}
+{"Name":"Krumine","Coordinates":{"X":-154.90625,"Y":17.53125,"Z":-79.03125}}
+{"Name":"Kuikian Batji","Coordinates":{"X":-69.65625,"Y":67.3125,"Z":-39.03125}}
+{"Name":"Kumana","Coordinates":{"X":72.28125,"Y":30.0625,"Z":-22.5625}}
+{"Name":"Kunapalanezti","Coordinates":{"X":-118.125,"Y":60.6875,"Z":-34.6875}}
+{"Name":"Kunbuluan","Coordinates":{"X":-90.09375,"Y":61.6875,"Z":-30.875}}
+{"Name":"Kungati","Coordinates":{"X":-123.5,"Y":13.25,"Z":-35.78125}}
+{"Name":"Kurngali","Coordinates":{"X":-129.8125,"Y":37.34375,"Z":-48.78125}}
+{"Name":"Kurui Gubi","Coordinates":{"X":-33.8125,"Y":39.34375,"Z":-26.25}}
+{"Name":"Kurunmindjuk","Coordinates":{"X":-66.25,"Y":52.25,"Z":-17.78125}}
+{"Name":"Kushentinoni","Coordinates":{"X":-134.71875,"Y":24.46875,"Z":-57.5625}}
+{"Name":"Kwakamitreyja","Coordinates":{"X":-89.84375,"Y":23.0625,"Z":-24.375}}
+{"Name":"Kwamennero Kojin","Coordinates":{"X":-69.4375,"Y":42.0,"Z":-52.4375}}
+{"Name":"Kaal","Coordinates":{"X":-18.34375,"Y":66.71875,"Z":-21.59375}}
+{"Name":"Labed","Coordinates":{"X":-86.875,"Y":32.3125,"Z":-59.90625}}
+{"Name":"Lakluit","Coordinates":{"X":-101.6875,"Y":25.125,"Z":-14.0625}}
+{"Name":"Lalande 18115","Coordinates":{"X":-3.84375,"Y":14.0,"Z":-14.40625}}
+{"Name":"Lalande 22954","Coordinates":{"X":42.8125,"Y":56.96875,"Z":15.21875}}
+{"Name":"Lalande 29917","Coordinates":{"X":-26.53125,"Y":22.15625,"Z":-4.5625}}
+{"Name":"Lalande 30699","Coordinates":{"X":-64.34375,"Y":48.96875,"Z":-10.875}}
+{"Name":"Lalande 37923","Coordinates":{"X":-84.125,"Y":38.9375,"Z":-28.15625}}
+{"Name":"Las Xenangaresti","Coordinates":{"X":-128.40625,"Y":33.59375,"Z":-24.75}}
+{"Name":"Latucairhemaiabi","Coordinates":{"X":-168.90625,"Y":27.375,"Z":-55.375}}
+{"Name":"LAWD 17","Coordinates":{"X":-1.84375,"Y":39.78125,"Z":-39.6875}}
+{"Name":"LAWD 52","Coordinates":{"X":-52.28125,"Y":61.8125,"Z":-26.5625}}
+{"Name":"LDS 2314","Coordinates":{"X":-16.5,"Y":44.5625,"Z":-31.875}}
+{"Name":"LDS 413","Coordinates":{"X":53.65625,"Y":32.40625,"Z":30.84375}}
+{"Name":"Lei Ta Tetona","Coordinates":{"X":19.125,"Y":15.4375,"Z":-12.28125}}
+{"Name":"Leng Wanjadimuru","Coordinates":{"X":-133.90625,"Y":-1.21875,"Z":-33.375}}
+{"Name":"LFT 1072","Coordinates":{"X":-45.90625,"Y":43.71875,"Z":-23.25}}
+{"Name":"LFT 1073","Coordinates":{"X":-38.9375,"Y":32.5625,"Z":-21.65625}}
+{"Name":"LFT 1361","Coordinates":{"X":-38.78125,"Y":24.71875,"Z":-0.5}}
+{"Name":"LFT 1421","Coordinates":{"X":-45.46875,"Y":18.5625,"Z":12.59375}}
+{"Name":"LFT 1446","Coordinates":{"X":-38.8125,"Y":18.25,"Z":-7.9375}}
+{"Name":"LFT 1748","Coordinates":{"X":-43.375,"Y":1.0,"Z":-15.125}}
+{"Name":"LFT 424","Coordinates":{"X":-14.46875,"Y":8.8125,"Z":-37.03125}}
+{"Name":"LFT 601","Coordinates":{"X":26.65625,"Y":24.8125,"Z":-34.75}}
+{"Name":"LFT 625","Coordinates":{"X":50.21875,"Y":8.71875,"Z":-13.0}}
+{"Name":"LFT 682","Coordinates":{"X":32.0,"Y":3.1875,"Z":1.46875}}
+{"Name":"LFT 698","Coordinates":{"X":27.25,"Y":26.75,"Z":-12.625}}
+{"Name":"LFT 709","Coordinates":{"X":34.6875,"Y":26.15625,"Z":-9.46875}}
+{"Name":"LFT 820","Coordinates":{"X":12.34375,"Y":54.5,"Z":-13.5625}}
+{"Name":"LFT 824","Coordinates":{"X":45.96875,"Y":33.71875,"Z":9.71875}}
+{"Name":"LFT 859","Coordinates":{"X":12.5625,"Y":31.46875,"Z":-1.71875}}
+{"Name":"LFT 880","Coordinates":{"X":-22.8125,"Y":31.40625,"Z":-18.34375}}
+{"Name":"LFT 90","Coordinates":{"X":-29.21875,"Y":-0.9375,"Z":-19.8125}}
+{"Name":"LFT 926","Coordinates":{"X":51.03125,"Y":17.6875,"Z":30.21875}}
+{"Name":"LFT 945","Coordinates":{"X":27.5,"Y":53.90625,"Z":16.40625}}
+{"Name":"LFT 992","Coordinates":{"X":-7.5625,"Y":42.59375,"Z":0.6875}}
+{"Name":"LHS 1065","Coordinates":{"X":-51.71875,"Y":15.84375,"Z":-31.75}}
+{"Name":"LHS 1101","Coordinates":{"X":-54.46875,"Y":9.375,"Z":-33.46875}}
+{"Name":"LHS 1167","Coordinates":{"X":-65.90625,"Y":8.9375,"Z":-44.0}}
+{"Name":"LHS 140","Coordinates":{"X":-34.53125,"Y":16.1875,"Z":-23.0625}}
+{"Name":"LHS 1505","Coordinates":{"X":-50.25,"Y":18.8125,"Z":-44.09375}}
+{"Name":"LHS 1663","Coordinates":{"X":-40.53125,"Y":18.25,"Z":-40.90625}}
+{"Name":"LHS 1882","Coordinates":{"X":-16.4375,"Y":21.375,"Z":-48.6875}}
+{"Name":"LHS 1923","Coordinates":{"X":-18.59375,"Y":27.84375,"Z":-48.96875}}
+{"Name":"LHS 1951","Coordinates":{"X":17.875,"Y":6.625,"Z":-21.375}}
+{"Name":"LHS 1963","Coordinates":{"X":-0.4375,"Y":14.09375,"Z":-24.3125}}
+{"Name":"LHS 2037","Coordinates":{"X":33.78125,"Y":7.25,"Z":-14.5}}
+{"Name":"LHS 207","Coordinates":{"X":-47.84375,"Y":28.65625,"Z":-45.8125}}
+{"Name":"LHS 2088","Coordinates":{"X":-23.3125,"Y":25.71875,"Z":-28.34375}}
+{"Name":"LHS 2123","Coordinates":{"X":-56.53125,"Y":42.40625,"Z":-44.75}}
+{"Name":"LHS 215","Coordinates":{"X":-20.59375,"Y":13.28125,"Z":-18.3125}}
+{"Name":"LHS 2157","Coordinates":{"X":26.21875,"Y":11.15625,"Z":-7.3125}}
+{"Name":"LHS 2166","Coordinates":{"X":30.5,"Y":4.65625,"Z":-0.59375}}
+{"Name":"LHS 221","Coordinates":{"X":-13.25,"Y":14.25,"Z":-28.71875}}
+{"Name":"LHS 2217","Coordinates":{"X":40.1875,"Y":50.0,"Z":-30.15625}}
+{"Name":"LHS 2233","Coordinates":{"X":69.34375,"Y":21.03125,"Z":0.25}}
+{"Name":"LHS 224","Coordinates":{"X":-7.5625,"Y":11.71875,"Z":-26.46875}}
+{"Name":"LHS 2274","Coordinates":{"X":8.21875,"Y":58.28125,"Z":-33.9375}}
+{"Name":"LHS 229","Coordinates":{"X":-5.90625,"Y":16.625,"Z":-33.34375}}
+{"Name":"LHS 2314","Coordinates":{"X":42.90625,"Y":64.03125,"Z":-20.375}}
+{"Name":"LHS 2335","Coordinates":{"X":52.09375,"Y":25.34375,"Z":5.6875}}
+{"Name":"LHS 2337","Coordinates":{"X":9.9375,"Y":66.25,"Z":-28.90625}}
+{"Name":"LHS 2363","Coordinates":{"X":-11.9375,"Y":62.25,"Z":-31.78125}}
+{"Name":"LHS 2405","Coordinates":{"X":-45.875,"Y":45.5625,"Z":-36.28125}}
+{"Name":"LHS 2412","Coordinates":{"X":55.09375,"Y":62.28125,"Z":1.875}}
+{"Name":"LHS 2429","Coordinates":{"X":24.71875,"Y":13.375,"Z":6.875}}
+{"Name":"LHS 246","Coordinates":{"X":-19.0,"Y":22.5625,"Z":-28.21875}}
+{"Name":"LHS 2471","Coordinates":{"X":18.96875,"Y":42.09375,"Z":-1.3125}}
+{"Name":"LHS 2477","Coordinates":{"X":67.8125,"Y":31.1875,"Z":26.9375}}
+{"Name":"LHS 2482","Coordinates":{"X":22.75,"Y":63.90625,"Z":-3.71875}}
+{"Name":"LHS 2494","Coordinates":{"X":35.53125,"Y":59.03125,"Z":5.09375}}
+{"Name":"LHS 250","Coordinates":{"X":-19.1875,"Y":24.34375,"Z":-29.53125}}
+{"Name":"LHS 2522","Coordinates":{"X":-24.8125,"Y":56.53125,"Z":-23.4375}}
+{"Name":"LHS 2541","Coordinates":{"X":29.8125,"Y":63.96875,"Z":6.625}}
+{"Name":"LHS 2552","Coordinates":{"X":40.15625,"Y":13.0,"Z":21.25}}
+{"Name":"LHS 259","Coordinates":{"X":-7.625,"Y":42.28125,"Z":-47.90625}}
+{"Name":"LHS 262","Coordinates":{"X":-6.90625,"Y":22.875,"Z":-23.8125}}
+{"Name":"LHS 2651","Coordinates":{"X":-22.84375,"Y":60.375,"Z":-13.8125}}
+{"Name":"LHS 2661","Coordinates":{"X":16.09375,"Y":46.71875,"Z":12.71875}}
+{"Name":"LHS 2691","Coordinates":{"X":-4.1875,"Y":65.0,"Z":3.21875}}
+{"Name":"LHS 274","Coordinates":{"X":35.8125,"Y":23.28125,"Z":-13.25}}
+{"Name":"LHS 2764a","Coordinates":{"X":-4.71875,"Y":54.125,"Z":0.65625}}
+{"Name":"LHS 278","Coordinates":{"X":-5.90625,"Y":38.65625,"Z":-29.90625}}
+{"Name":"LHS 2789","Coordinates":{"X":-34.34375,"Y":71.0,"Z":-8.78125}}
+{"Name":"LHS 2819","Coordinates":{"X":-30.5,"Y":38.5625,"Z":-13.4375}}
+{"Name":"LHS 283","Coordinates":{"X":-20.78125,"Y":29.59375,"Z":-23.53125}}
+{"Name":"LHS 287","Coordinates":{"X":1.03125,"Y":29.59375,"Z":-16.5}}
+{"Name":"LHS 2884","Coordinates":{"X":-22.0,"Y":48.40625,"Z":1.78125}}
+{"Name":"LHS 2887","Coordinates":{"X":-7.34375,"Y":26.78125,"Z":5.71875}}
+{"Name":"LHS 293","Coordinates":{"X":1.84375,"Y":28.3125,"Z":-14.4375}}
+{"Name":"LHS 2936","Coordinates":{"X":-31.6875,"Y":55.5625,"Z":0.5}}
+{"Name":"LHS 295","Coordinates":{"X":15.71875,"Y":33.46875,"Z":-12.21875}}
+{"Name":"LHS 3006","Coordinates":{"X":-21.96875,"Y":29.09375,"Z":-1.71875}}
+{"Name":"LHS 301","Coordinates":{"X":28.84375,"Y":52.34375,"Z":-8.625}}
+{"Name":"LHS 302","Coordinates":{"X":9.96875,"Y":53.1875,"Z":-16.3125}}
+{"Name":"LHS 3057","Coordinates":{"X":-50.75,"Y":50.03125,"Z":-13.28125}}
+{"Name":"LHS 306","Coordinates":{"X":30.09375,"Y":28.84375,"Z":2.96875}}
+{"Name":"LHS 317","Coordinates":{"X":44.65625,"Y":27.03125,"Z":15.03125}}
+{"Name":"LHS 3262","Coordinates":{"X":-24.125,"Y":18.84375,"Z":4.90625}}
+{"Name":"LHS 331","Coordinates":{"X":-24.40625,"Y":63.4375,"Z":-20.65625}}
+{"Name":"LHS 336","Coordinates":{"X":26.5625,"Y":5.78125,"Z":16.125}}
+{"Name":"LHS 346","Coordinates":{"X":38.96875,"Y":20.21875,"Z":28.96875}}
+{"Name":"LHS 350","Coordinates":{"X":-1.46875,"Y":44.59375,"Z":5.75}}
+{"Name":"LHS 351","Coordinates":{"X":8.40625,"Y":59.875,"Z":17.5625}}
+{"Name":"LHS 3549","Coordinates":{"X":-29.625,"Y":6.125,"Z":-1.9375}}
+{"Name":"LHS 355","Coordinates":{"X":1.09375,"Y":46.15625,"Z":9.71875}}
+{"Name":"LHS 3586","Coordinates":{"X":-82.09375,"Y":25.96875,"Z":-23.15625}}
+{"Name":"LHS 3631","Coordinates":{"X":-91.625,"Y":30.34375,"Z":-31.65625}}
+{"Name":"LHS 369","Coordinates":{"X":9.71875,"Y":26.34375,"Z":22.15625}}
+{"Name":"LHS 371","Coordinates":{"X":-9.625,"Y":49.4375,"Z":17.625}}
+{"Name":"LHS 380","Coordinates":{"X":5.28125,"Y":6.75,"Z":10.875}}
+{"Name":"LHS 3877","Coordinates":{"X":-74.28125,"Y":10.90625,"Z":-30.84375}}
+{"Name":"LHS 391","Coordinates":{"X":-15.90625,"Y":45.15625,"Z":21.375}}
+{"Name":"LHS 411","Coordinates":{"X":-13.125,"Y":23.59375,"Z":18.625}}
+{"Name":"LHS 417","Coordinates":{"X":-18.3125,"Y":18.1875,"Z":4.90625}}
+{"Name":"LHS 450","Coordinates":{"X":-12.40625,"Y":7.8125,"Z":-1.875}}
+{"Name":"LHS 5072","Coordinates":{"X":-33.34375,"Y":15.15625,"Z":-27.53125}}
+{"Name":"LHS 5287","Coordinates":{"X":-36.40625,"Y":48.1875,"Z":-0.78125}}
+{"Name":"LHS 6128","Coordinates":{"X":-14.4375,"Y":18.3125,"Z":-29.28125}}
+{"Name":"LHS 6197","Coordinates":{"X":79.5,"Y":45.0,"Z":10.46875}}
+{"Name":"LHS 6282","Coordinates":{"X":-11.46875,"Y":39.78125,"Z":22.78125}}
+{"Name":"LHS 6309","Coordinates":{"X":-33.5625,"Y":33.125,"Z":13.46875}}
+{"Name":"LHS 64","Coordinates":{"X":-76.6875,"Y":11.09375,"Z":-10.8125}}
+{"Name":"Li Quang","Coordinates":{"X":-108.03125,"Y":36.84375,"Z":-11.75}}
+{"Name":"Loga","Coordinates":{"X":-79.78125,"Y":36.53125,"Z":-42.0625}}
+{"Name":"Logoni","Coordinates":{"X":69.21875,"Y":29.03125,"Z":17.28125}}
+{"Name":"Lokapuri","Coordinates":{"X":-72.78125,"Y":33.78125,"Z":1.9375}}
+{"Name":"Lopu Maid Fo","Coordinates":{"X":59.28125,"Y":44.375,"Z":16.6875}}
+{"Name":"LP 102-320","Coordinates":{"X":-60.625,"Y":35.125,"Z":3.21875}}
+{"Name":"LP 131-55","Coordinates":{"X":-25.34375,"Y":63.8125,"Z":-17.6875}}
+{"Name":"LP 1-52","Coordinates":{"X":-49.9375,"Y":28.8125,"Z":-33.28125}}
+{"Name":"LP 167-64","Coordinates":{"X":-7.34375,"Y":55.78125,"Z":-35.59375}}
+{"Name":"LP 167-71","Coordinates":{"X":-11.15625,"Y":61.84375,"Z":-39.28125}}
+{"Name":"LP 211-12","Coordinates":{"X":2.03125,"Y":43.96875,"Z":-41.375}}
+{"Name":"LP 25-2","Coordinates":{"X":-48.9375,"Y":27.25,"Z":-19.5625}}
+{"Name":"LP 271-25","Coordinates":{"X":-10.46875,"Y":31.84375,"Z":7.3125}}
+{"Name":"LP 275-68","Coordinates":{"X":-23.34375,"Y":25.0625,"Z":15.1875}}
+{"Name":"LP 27-9","Coordinates":{"X":-70.40625,"Y":25.4375,"Z":-32.40625}}
+{"Name":"LP 29-188","Coordinates":{"X":-67.625,"Y":17.0625,"Z":-50.21875}}
+{"Name":"LP 30-55","Coordinates":{"X":-26.5625,"Y":6.75,"Z":-20.71875}}
+{"Name":"LP 320-359","Coordinates":{"X":1.25,"Y":49.71875,"Z":-6.5625}}
+{"Name":"LP 322-836","Coordinates":{"X":-3.4375,"Y":51.59375,"Z":2.03125}}
+{"Name":"LP 36-115","Coordinates":{"X":-41.6875,"Y":46.0,"Z":-49.78125}}
+{"Name":"LP 377-100","Coordinates":{"X":7.5625,"Y":70.4375,"Z":-2.5625}}
+{"Name":"LP 37-75","Coordinates":{"X":-27.25,"Y":38.5,"Z":-33.65625}}
+{"Name":"LP 440-38","Coordinates":{"X":-4.65625,"Y":43.78125,"Z":20.6875}}
+{"Name":"LP 45-128","Coordinates":{"X":-69.28125,"Y":32.25,"Z":-13.90625}}
+{"Name":"LP 465-14","Coordinates":{"X":75.75,"Y":26.03125,"Z":5.15625}}
+{"Name":"LP 48-567","Coordinates":{"X":-67.0625,"Y":14.96875,"Z":-25.5625}}
+{"Name":"LP 488-37","Coordinates":{"X":28.5625,"Y":42.5625,"Z":-31.9375}}
+{"Name":"LP 51-17","Coordinates":{"X":-60.0625,"Y":5.15625,"Z":-40.28125}}
+{"Name":"LP 58-247","Coordinates":{"X":-24.25,"Y":28.53125,"Z":-46.0}}
+{"Name":"LP 5-88","Coordinates":{"X":-27.28125,"Y":19.59375,"Z":-23.03125}}
+{"Name":"LP 60-205","Coordinates":{"X":-31.96875,"Y":46.84375,"Z":-50.375}}
+{"Name":"LP 617-37","Coordinates":{"X":22.28125,"Y":58.59375,"Z":25.5}}
+{"Name":"LP 64-194","Coordinates":{"X":-21.65625,"Y":32.21875,"Z":-16.21875}}
+{"Name":"LP 672-42","Coordinates":{"X":27.78125,"Y":32.84375,"Z":1.0}}
+{"Name":"LP 673-13","Coordinates":{"X":33.15625,"Y":43.03125,"Z":0.40625}}
+{"Name":"LP 675-76","Coordinates":{"X":27.21875,"Y":45.59375,"Z":11.59375}}
+{"Name":"LP 71-157","Coordinates":{"X":-52.34375,"Y":28.375,"Z":-8.03125}}
+{"Name":"LP 7-226","Coordinates":{"X":-42.78125,"Y":31.75,"Z":-27.25}}
+{"Name":"LP 732-94","Coordinates":{"X":33.28125,"Y":32.34375,"Z":1.03125}}
+{"Name":"LP 734-11","Coordinates":{"X":36.9375,"Y":41.28125,"Z":9.625}}
+{"Name":"LP 787-52","Coordinates":{"X":35.40625,"Y":14.375,"Z":-14.21875}}
+{"Name":"LP 792-20","Coordinates":{"X":41.53125,"Y":34.78125,"Z":4.0}}
+{"Name":"LP 792-33","Coordinates":{"X":54.8125,"Y":49.65625,"Z":7.71875}}
+{"Name":"LP 793-33","Coordinates":{"X":46.875,"Y":40.21875,"Z":11.25}}
+{"Name":"LP 844-28","Coordinates":{"X":36.125,"Y":9.3125,"Z":-13.75}}
+{"Name":"LP 847-48","Coordinates":{"X":34.0625,"Y":13.375,"Z":-4.78125}}
+{"Name":"LP 849-20","Coordinates":{"X":78.71875,"Y":50.21875,"Z":1.0625}}
+{"Name":"LP 855-34","Coordinates":{"X":33.625,"Y":33.8125,"Z":33.375}}
+{"Name":"LP 90-39","Coordinates":{"X":-18.25,"Y":33.09375,"Z":-39.09375}}
+{"Name":"LP 906-9","Coordinates":{"X":43.4375,"Y":25.78125,"Z":6.5625}}
+{"Name":"LP 908-11","Coordinates":{"X":42.84375,"Y":25.34375,"Z":16.9375}}
+{"Name":"LP 98-132","Coordinates":{"X":-26.78125,"Y":37.03125,"Z":-4.59375}}
+{"Name":"LP Draconis","Coordinates":{"X":-87.9375,"Y":49.34375,"Z":-15.5}}
+{"Name":"LTT 10482","Coordinates":{"X":-61.1875,"Y":23.59375,"Z":-42.0}}
+{"Name":"LTT 12680","Coordinates":{"X":31.09375,"Y":53.25,"Z":-34.96875}}
+{"Name":"LTT 12990","Coordinates":{"X":-0.5625,"Y":67.40625,"Z":-29.65625}}
+{"Name":"LTT 15294","Coordinates":{"X":-84.6875,"Y":50.21875,"Z":-6.40625}}
+{"Name":"LTT 16016","Coordinates":{"X":-62.53125,"Y":12.375,"Z":-5.5}}
+{"Name":"LTT 16523","Coordinates":{"X":-72.65625,"Y":13.28125,"Z":-25.9375}}
+{"Name":"LTT 16979","Coordinates":{"X":-97.25,"Y":24.3125,"Z":-52.5625}}
+{"Name":"LTT 17102","Coordinates":{"X":-73.84375,"Y":16.5625,"Z":-45.59375}}
+{"Name":"LTT 3919","Coordinates":{"X":50.03125,"Y":17.375,"Z":5.59375}}
+{"Name":"LTT 4131","Coordinates":{"X":61.0,"Y":37.84375,"Z":7.84375}}
+{"Name":"LTT 4150","Coordinates":{"X":61.46875,"Y":42.6875,"Z":6.96875}}
+{"Name":"LTT 4376","Coordinates":{"X":54.5,"Y":61.46875,"Z":9.625}}
+{"Name":"LTT 4447","Coordinates":{"X":68.0625,"Y":50.40625,"Z":23.15625}}
+{"Name":"LTT 4461","Coordinates":{"X":49.625,"Y":44.84375,"Z":15.65625}}
+{"Name":"LTT 4527","Coordinates":{"X":49.9375,"Y":48.53125,"Z":17.28125}}
+{"Name":"LTT 4549","Coordinates":{"X":55.71875,"Y":17.59375,"Z":27.15625}}
+{"Name":"LTT 4730","Coordinates":{"X":22.1875,"Y":30.875,"Z":9.84375}}
+{"Name":"LTT 4772","Coordinates":{"X":50.78125,"Y":63.21875,"Z":26.53125}}
+{"Name":"LTT 4898","Coordinates":{"X":43.0625,"Y":39.71875,"Z":27.71875}}
+{"Name":"LTT 5131","Coordinates":{"X":39.28125,"Y":26.0625,"Z":32.375}}
+{"Name":"LTT 5455","Coordinates":{"X":13.0625,"Y":18.8125,"Z":17.96875}}
+{"Name":"LU Velorum","Coordinates":{"X":49.875,"Y":5.875,"Z":4.3125}}
+{"Name":"Lucab Ku","Coordinates":{"X":-132.75,"Y":48.28125,"Z":-41.4375}}
+{"Name":"Luggerates","Coordinates":{"X":-106.8125,"Y":42.0625,"Z":-63.9375}}
+{"Name":"Lugien Chabtani","Coordinates":{"X":-63.21875,"Y":57.625,"Z":-16.0}}
+{"Name":"Luhman 16","Coordinates":{"X":6.3125,"Y":0.59375,"Z":1.71875}}
+{"Name":"Luyten 674-15","Coordinates":{"X":16.71875,"Y":2.28125,"Z":-9.125}}
+{"Name":"Luyten's Star","Coordinates":{"X":6.5625,"Y":2.34375,"Z":-10.25}}
+{"Name":"Macomaneleng Mu","Coordinates":{"X":-100.40625,"Y":28.125,"Z":-28.75}}
+{"Name":"Magec","Coordinates":{"X":-32.875,"Y":36.15625,"Z":15.5}}
+{"Name":"Maitaokona","Coordinates":{"X":-157.0625,"Y":33.1875,"Z":-69.8125}}
+{"Name":"Maitis","Coordinates":{"X":-84.1875,"Y":18.0625,"Z":-47.28125}}
+{"Name":"Malanquiya","Coordinates":{"X":-150.21875,"Y":30.09375,"Z":-15.6875}}
+{"Name":"Malina","Coordinates":{"X":-48.1875,"Y":23.0,"Z":14.40625}}
+{"Name":"Maljenni","Coordinates":{"X":61.34375,"Y":38.71875,"Z":17.0}}
+{"Name":"Manarato","Coordinates":{"X":-91.84375,"Y":64.9375,"Z":-38.5}}
+{"Name":"Manbai Chac Moco","Coordinates":{"X":28.5,"Y":32.09375,"Z":5.3125}}
+{"Name":"Mankob","Coordinates":{"X":-84.78125,"Y":21.90625,"Z":-44.40625}}
+{"Name":"Mannheim","Coordinates":{"X":-142.0,"Y":67.625,"Z":-36.34375}}
+{"Name":"Maranarinjhian Hsi","Coordinates":{"X":-97.34375,"Y":42.625,"Z":-6.9375}}
+{"Name":"Marasing","Coordinates":{"X":-89.03125,"Y":31.09375,"Z":-11.15625}}
+{"Name":"Maraupol Bumbin","Coordinates":{"X":82.5,"Y":50.71875,"Z":4.84375}}
+{"Name":"Marditj","Coordinates":{"X":32.4375,"Y":15.0625,"Z":9.375}}
+{"Name":"Markanomovoy","Coordinates":{"X":-167.09375,"Y":26.71875,"Z":-55.375}}
+{"Name":"Marojini","Coordinates":{"X":-99.84375,"Y":34.46875,"Z":-9.3125}}
+{"Name":"Marsinatani","Coordinates":{"X":-87.21875,"Y":40.34375,"Z":-9.5}}
+{"Name":"Maujinagoto","Coordinates":{"X":-77.46875,"Y":16.09375,"Z":-19.5625}}
+{"Name":"Mbuthamovites","Coordinates":{"X":-132.8125,"Y":15.65625,"Z":-47.90625}}
+{"Name":"MCC 858","Coordinates":{"X":-74.0,"Y":4.9375,"Z":-29.875}}
+{"Name":"Medusa","Coordinates":{"X":-67.96875,"Y":42.5,"Z":-14.5}}
+{"Name":"Megrez","Coordinates":{"X":-30.09375,"Y":69.5625,"Z":-27.1875}}
+{"Name":"Melcior","Coordinates":{"X":54.78125,"Y":65.25,"Z":-9.21875}}
+{"Name":"Meliae","Coordinates":{"X":-17.3125,"Y":49.53125,"Z":-1.6875}}
+{"Name":"Merki","Coordinates":{"X":-81.625,"Y":50.625,"Z":-19.28125}}
+{"Name":"Midgcut","Coordinates":{"X":-14.625,"Y":10.34375,"Z":13.15625}}
+{"Name":"Mildeptu","Coordinates":{"X":14.125,"Y":1.3125,"Z":-3.28125}}
+{"Name":"Mildjarayuta","Coordinates":{"X":65.9375,"Y":44.625,"Z":8.84375}}
+{"Name":"Minawara","Coordinates":{"X":-100.03125,"Y":42.53125,"Z":-60.59375}}
+{"Name":"Miola","Coordinates":{"X":-64.0,"Y":24.0,"Z":-41.0}}
+{"Name":"Miquich","Coordinates":{"X":-17.71875,"Y":19.125,"Z":19.59375}}
+{"Name":"Mizar","Coordinates":{"X":-34.21875,"Y":68.84375,"Z":-14.09375}}
+{"Name":"Mobokomu","Coordinates":{"X":-126.40625,"Y":20.09375,"Z":-57.3125}}
+{"Name":"Mokojing","Coordinates":{"X":73.4375,"Y":58.34375,"Z":-0.21875}}
+{"Name":"Momoirent","Coordinates":{"X":58.0625,"Y":13.53125,"Z":0.90625}}
+{"Name":"Morgor","Coordinates":{"X":-15.25,"Y":39.53125,"Z":-2.25}}
+{"Name":"Moros","Coordinates":{"X":-45.96875,"Y":17.375,"Z":-31.3125}}
+{"Name":"Moscab Kutja","Coordinates":{"X":-95.65625,"Y":38.0625,"Z":-13.46875}}
+{"Name":"Mu Nora","Coordinates":{"X":-115.09375,"Y":43.84375,"Z":-24.5}}
+{"Name":"Muango","Coordinates":{"X":-143.03125,"Y":28.53125,"Z":-20.90625}}
+{"Name":"Mufrid","Coordinates":{"X":-1.125,"Y":35.25,"Z":11.09375}}
+{"Name":"Mullag","Coordinates":{"X":0.5,"Y":35.09375,"Z":-19.1875}}
+{"Name":"Muncheim","Coordinates":{"X":-98.375,"Y":37.5625,"Z":-61.28125}}
+{"Name":"Nagariggam","Coordinates":{"X":57.0625,"Y":37.875,"Z":0.75}}
+{"Name":"Nahundi","Coordinates":{"X":28.0,"Y":47.15625,"Z":-13.28125}}
+{"Name":"Nakuma","Coordinates":{"X":-154.59375,"Y":34.1875,"Z":-18.75}}
+{"Name":"Nang Ta-khian","Coordinates":{"X":-18.21875,"Y":26.5625,"Z":-6.34375}}
+{"Name":"Naraka","Coordinates":{"X":-34.09375,"Y":26.21875,"Z":-5.53125}}
+{"Name":"Neche","Coordinates":{"X":63.6875,"Y":12.90625,"Z":-13.09375}}
+{"Name":"Nemepawe","Coordinates":{"X":-127.59375,"Y":34.90625,"Z":-43.40625}}
+{"Name":"Nener","Coordinates":{"X":-97.0,"Y":14.15625,"Z":-33.5}}
+{"Name":"Ngardamayo","Coordinates":{"X":39.53125,"Y":28.53125,"Z":-36.21875}}
+{"Name":"Ngolitjali","Coordinates":{"X":-117.53125,"Y":38.0625,"Z":-4.9375}}
+{"Name":"Ngoloki Anaten","Coordinates":{"X":-112.5,"Y":33.8125,"Z":-60.03125}}
+{"Name":"Nicobarese","Coordinates":{"X":-124.9375,"Y":29.90625,"Z":-39.15625}}
+{"Name":"Njikan","Coordinates":{"X":-104.78125,"Y":3.65625,"Z":-20.8125}}
+{"Name":"NLTT 26813","Coordinates":{"X":65.5625,"Y":35.875,"Z":11.8125}}
+{"Name":"NLTT 34715","Coordinates":{"X":-27.4375,"Y":66.53125,"Z":-5.65625}}
+{"Name":"NLTT 46621","Coordinates":{"X":-43.8125,"Y":20.34375,"Z":4.8125}}
+{"Name":"NLTT 48502","Coordinates":{"X":-99.5625,"Y":27.125,"Z":-4.25}}
+{"Name":"NLTT 49528","Coordinates":{"X":-72.625,"Y":18.5,"Z":-11.75}}
+{"Name":"NLTT 50716","Coordinates":{"X":-90.96875,"Y":40.40625,"Z":-42.0625}}
+{"Name":"NLTT 53889","Coordinates":{"X":-76.5,"Y":7.6875,"Z":-24.96875}}
+{"Name":"Nuenets","Coordinates":{"X":48.0,"Y":17.65625,"Z":28.3125}}
+{"Name":"Nuguynici","Coordinates":{"X":-132.3125,"Y":44.40625,"Z":-13.84375}}
+{"Name":"Nuwang","Coordinates":{"X":-87.65625,"Y":0.59375,"Z":-41.53125}}
+{"Name":"Nzam Cakua","Coordinates":{"X":-90.65625,"Y":8.5,"Z":-40.625}}
+{"Name":"Nzambassee","Coordinates":{"X":-1.03125,"Y":33.0625,"Z":-19.96875}}
+{"Name":"Okinoukhe","Coordinates":{"X":-111.5625,"Y":8.84375,"Z":-41.65625}}
+{"Name":"Okuapang","Coordinates":{"X":-84.3125,"Y":52.8125,"Z":-14.875}}
+{"Name":"Olgrea","Coordinates":{"X":-28.125,"Y":68.28125,"Z":-6.375}}
+{"Name":"Onduwatya","Coordinates":{"X":-119.9375,"Y":60.34375,"Z":-38.71875}}
+{"Name":"Opala","Coordinates":{"X":-25.5,"Y":35.25,"Z":9.28125}}
+{"Name":"Ori","Coordinates":{"X":-26.28125,"Y":56.09375,"Z":2.4375}}
+{"Name":"OT Serpentis","Coordinates":{"X":-11.125,"Y":30.34375,"Z":18.40625}}
+{"Name":"Ovid","Coordinates":{"X":-28.0625,"Y":35.15625,"Z":14.8125}}
+{"Name":"Pachanu","Coordinates":{"X":-160.21875,"Y":40.53125,"Z":-55.75}}
+{"Name":"Pan","Coordinates":{"X":14.9375,"Y":40.03125,"Z":22.375}}
+{"Name":"Pangluya","Coordinates":{"X":27.1875,"Y":41.1875,"Z":-16.59375}}
+{"Name":"Parcae","Coordinates":{"X":-8.125,"Y":55.09375,"Z":-17.0}}
+{"Name":"Paul-Friedrichs Star","Coordinates":{"X":-48.15625,"Y":34.3125,"Z":8.78125}}
+{"Name":"Pemede","Coordinates":{"X":-88.4375,"Y":25.46875,"Z":-26.15625}}
+{"Name":"Perendi","Coordinates":{"X":-52.5625,"Y":33.09375,"Z":-11.875}}
+{"Name":"Phra Zhan","Coordinates":{"X":78.8125,"Y":56.0625,"Z":7.21875}}
+{"Name":"Pi-fang","Coordinates":{"X":-34.65625,"Y":22.84375,"Z":-4.59375}}
+{"Name":"Piran","Coordinates":{"X":-124.40625,"Y":39.5,"Z":-13.96875}}
+{"Name":"Pliny","Coordinates":{"X":4.625,"Y":36.0,"Z":-13.5}}
+{"Name":"Pollux","Coordinates":{"X":6.71875,"Y":13.71875,"Z":-30.125}}
+{"Name":"Popon","Coordinates":{"X":-156.78125,"Y":20.84375,"Z":-76.75}}
+{"Name":"PPM 41187","Coordinates":{"X":-74.125,"Y":-1.9375,"Z":-23.90625}}
+{"Name":"Privir","Coordinates":{"X":-161.0625,"Y":16.5,"Z":-22.875}}
+{"Name":"Procyon","Coordinates":{"X":6.21875,"Y":2.65625,"Z":-9.1875}}
+{"Name":"Psamathe","Coordinates":{"X":-76.71875,"Y":7.34375,"Z":-28.0625}}
+{"Name":"PW Hydrae","Coordinates":{"X":65.0,"Y":38.5625,"Z":-6.21875}}
+{"Name":"Quiness","Coordinates":{"X":-46.46875,"Y":37.78125,"Z":-24.9375}}
+{"Name":"Rabates","Coordinates":{"X":-152.125,"Y":-1.71875,"Z":-49.34375}}
+{"Name":"Rahu","Coordinates":{"X":-43.78125,"Y":62.4375,"Z":-0.25}}
+{"Name":"Rakapila","Coordinates":{"X":-14.90625,"Y":33.625,"Z":9.125}}
+{"Name":"Ratri","Coordinates":{"X":-11.53125,"Y":70.0,"Z":-26.75}}
+{"Name":"Rauratunab","Coordinates":{"X":-118.4375,"Y":11.03125,"Z":-51.78125}}
+{"Name":"Rhea","Coordinates":{"X":58.125,"Y":22.59375,"Z":-28.59375}}
+{"Name":"Rho Cancri","Coordinates":{"X":9.34375,"Y":24.9375,"Z":-30.1875}}
+{"Name":"Ross 1003","Coordinates":{"X":-4.3125,"Y":33.90625,"Z":-11.96875}}
+{"Name":"Ross 1015","Coordinates":{"X":-6.09375,"Y":29.46875,"Z":3.03125}}
+{"Name":"Ross 104","Coordinates":{"X":5.5625,"Y":19.6875,"Z":-7.3125}}
+{"Name":"Ross 1051","Coordinates":{"X":-37.21875,"Y":44.5,"Z":-5.0625}}
+{"Name":"Ross 1057","Coordinates":{"X":-32.3125,"Y":26.1875,"Z":-12.4375}}
+{"Name":"Ross 112","Coordinates":{"X":-28.0,"Y":64.28125,"Z":-33.34375}}
+{"Name":"Ross 128","Coordinates":{"X":5.53125,"Y":9.4375,"Z":0.125}}
+{"Name":"Ross 130","Coordinates":{"X":-3.90625,"Y":41.0,"Z":19.75}}
+{"Name":"Ross 210","Coordinates":{"X":-73.5,"Y":10.0625,"Z":-15.71875}}
+{"Name":"Ross 211","Coordinates":{"X":-123.71875,"Y":17.3125,"Z":-30.21875}}
+{"Name":"Ross 318","Coordinates":{"X":-22.0,"Y":4.25,"Z":-14.875}}
+{"Name":"Ross 446","Coordinates":{"X":14.21875,"Y":16.90625,"Z":-6.53125}}
+{"Name":"Ross 447","Coordinates":{"X":-36.5,"Y":52.46875,"Z":-38.15625}}
+{"Name":"Ross 486","Coordinates":{"X":14.65625,"Y":39.46875,"Z":18.90625}}
+{"Name":"Ross 490","Coordinates":{"X":3.59375,"Y":23.5,"Z":7.53125}}
+{"Name":"Ross 640","Coordinates":{"X":-31.6875,"Y":35.125,"Z":18.9375}}
+{"Name":"Ross 667","Coordinates":{"X":-170.53125,"Y":5.71875,"Z":-49.1875}}
+{"Name":"Ross 695","Coordinates":{"X":18.8125,"Y":20.03125,"Z":8.78125}}
+{"Name":"Ross 85","Coordinates":{"X":17.375,"Y":25.5,"Z":-19.875}}
+{"Name":"Ross 860","Coordinates":{"X":-20.125,"Y":19.28125,"Z":19.0}}
+{"Name":"Ross 905","Coordinates":{"X":4.46875,"Y":31.9375,"Z":-7.21875}}
+{"Name":"Ross 93","Coordinates":{"X":11.46875,"Y":34.5625,"Z":-27.6875}}
+{"Name":"Ross 986","Coordinates":{"X":-0.25,"Y":7.1875,"Z":-19.25}}
+{"Name":"Sak Chelmir","Coordinates":{"X":55.78125,"Y":40.8125,"Z":19.78125}}
+{"Name":"Salarhul","Coordinates":{"X":-120.875,"Y":46.34375,"Z":-35.5625}}
+{"Name":"Samkyha","Coordinates":{"X":66.96875,"Y":28.75,"Z":-1.21875}}
+{"Name":"Sanguru","Coordinates":{"X":-123.53125,"Y":42.3125,"Z":-72.71875}}
+{"Name":"Seber","Coordinates":{"X":-173.875,"Y":2.5625,"Z":-31.21875}}
+{"Name":"Sekhemet","Coordinates":{"X":33.1875,"Y":30.375,"Z":-29.21875}}
+{"Name":"Selebegua","Coordinates":{"X":58.75,"Y":61.125,"Z":25.59375}}
+{"Name":"Seting","Coordinates":{"X":-57.71875,"Y":7.875,"Z":-6.5}}
+{"Name":"Shama","Coordinates":{"X":-143.3125,"Y":49.75,"Z":-45.3125}}
+{"Name":"Shamash","Coordinates":{"X":47.46875,"Y":28.28125,"Z":-9.21875}}
+{"Name":"Shapash","Coordinates":{"X":36.75,"Y":31.8125,"Z":-19.375}}
+{"Name":"Shebayeb","Coordinates":{"X":-84.6875,"Y":55.71875,"Z":-12.78125}}
+{"Name":"Sheela Na Gig","Coordinates":{"X":-24.9375,"Y":67.46875,"Z":-12.09375}}
+{"Name":"Sigma Bootis","Coordinates":{"X":-14.46875,"Y":47.4375,"Z":14.40625}}
+{"Name":"Skeggiko O","Coordinates":{"X":53.6875,"Y":11.9375,"Z":16.5}}
+{"Name":"Slatus","Coordinates":{"X":76.6875,"Y":35.1875,"Z":-19.09375}}
+{"Name":"Sofagre","Coordinates":{"X":-54.21875,"Y":48.53125,"Z":-30.15625}}
+{"Name":"Sokoji","Coordinates":{"X":58.15625,"Y":38.875,"Z":19.4375}}
+{"Name":"Sol","Coordinates":{"X":0.0,"Y":0.0,"Z":0.0}}
+{"Name":"Song Te Tians","Coordinates":{"X":40.09375,"Y":52.59375,"Z":-17.21875}}
+{"Name":"Sopdu","Coordinates":{"X":-45.625,"Y":7.125,"Z":-27.53125}}
+{"Name":"Stein 2051","Coordinates":{"X":-9.46875,"Y":2.4375,"Z":-15.375}}
+{"Name":"StKM 1-1676","Coordinates":{"X":-74.875,"Y":31.75,"Z":-5.96875}}
+{"Name":"Styx","Coordinates":{"X":-24.3125,"Y":37.75,"Z":6.03125}}
+{"Name":"Sudz","Coordinates":{"X":-9.875,"Y":52.4375,"Z":-29.25}}
+{"Name":"Sukub Tungatis","Coordinates":{"X":-40.125,"Y":65.96875,"Z":-35.5625}}
+{"Name":"Sukuruaco","Coordinates":{"X":69.46875,"Y":45.875,"Z":13.6875}}
+{"Name":"Supen","Coordinates":{"X":-95.25,"Y":61.53125,"Z":-47.71875}}
+{"Name":"Suraci","Coordinates":{"X":-102.53125,"Y":9.34375,"Z":-51.625}}
+{"Name":"Surya","Coordinates":{"X":-38.46875,"Y":39.25,"Z":5.40625}}
+{"Name":"Tabassapisi","Coordinates":{"X":-84.5,"Y":37.34375,"Z":-2.25}}
+{"Name":"Taexalkoloine","Coordinates":{"X":-92.125,"Y":57.21875,"Z":-27.53125}}
+{"Name":"Taima Baijuhacmoora","Coordinates":{"X":-12.125,"Y":56.59375,"Z":9.1875}}
+{"Name":"Taleachishvakhrud","Coordinates":{"X":-102.96875,"Y":57.375,"Z":-21.9375}}
+{"Name":"Taliesin","Coordinates":{"X":-2.9375,"Y":22.1875,"Z":-25.28125}}
+{"Name":"Talitha","Coordinates":{"X":-5.125,"Y":31.28125,"Z":-35.125}}
+{"Name":"T'ang Bumbain","Coordinates":{"X":-86.5625,"Y":29.96875,"Z":-4.0625}}
+{"Name":"Taosha","Coordinates":{"X":-113.9375,"Y":18.78125,"Z":-10.875}}
+{"Name":"Tarasa","Coordinates":{"X":-159.78125,"Y":53.09375,"Z":-56.6875}}
+{"Name":"Tatil","Coordinates":{"X":-77.84375,"Y":23.1875,"Z":-22.59375}}
+{"Name":"Tau Bootis","Coordinates":{"X":0.09375,"Y":48.78125,"Z":14.625}}
+{"Name":"Tau-1 Hydrae","Coordinates":{"X":39.59375,"Y":30.96875,"Z":-25.84375}}
+{"Name":"Tefenhua","Coordinates":{"X":-61.03125,"Y":58.8125,"Z":-43.96875}}
+{"Name":"Teng Yeh","Coordinates":{"X":6.28125,"Y":28.4375,"Z":-12.46875}}
+{"Name":"Theta Cygni","Coordinates":{"X":-57.65625,"Y":14.15625,"Z":7.1875}}
+{"Name":"Theta Draconis","Coordinates":{"X":-48.9375,"Y":48.09375,"Z":0.03125}}
+{"Name":"Theta Ursae Majoris","Coordinates":{"X":-7.59375,"Y":31.71875,"Z":-29.46875}}
+{"Name":"Thosim Biamh","Coordinates":{"X":-59.5625,"Y":31.65625,"Z":-23.3125}}
+{"Name":"Thoth","Coordinates":{"X":1.9375,"Y":41.46875,"Z":-24.8125}}
+{"Name":"Thottacahuan Wang","Coordinates":{"X":12.4375,"Y":30.90625,"Z":9.15625}}
+{"Name":"Thraskias","Coordinates":{"X":46.71875,"Y":46.625,"Z":-1.65625}}
+{"Name":"Tiapalan","Coordinates":{"X":26.03125,"Y":18.28125,"Z":9.15625}}
+{"Name":"Tiethay","Coordinates":{"X":-29.625,"Y":67.09375,"Z":-20.875}}
+{"Name":"Tilian","Coordinates":{"X":-21.53125,"Y":22.3125,"Z":10.125}}
+{"Name":"Tinia","Coordinates":{"X":6.8125,"Y":48.71875,"Z":-33.25}}
+{"Name":"Tivertsi","Coordinates":{"X":-106.6875,"Y":2.03125,"Z":-50.0625}}
+{"Name":"Tollan","Coordinates":{"X":-14.78125,"Y":20.0,"Z":-21.96875}}
+{"Name":"Trepin","Coordinates":{"X":26.375,"Y":10.5625,"Z":9.78125}}
+{"Name":"Tripu","Coordinates":{"X":-73.15625,"Y":9.28125,"Z":-27.8125}}
+{"Name":"Tsetan","Coordinates":{"X":-112.75,"Y":17.71875,"Z":-34.71875}}
+{"Name":"Tsohodiae","Coordinates":{"X":-103.75,"Y":30.96875,"Z":-1.5625}}
+{"Name":"Tun","Coordinates":{"X":-47.96875,"Y":20.96875,"Z":-17.53125}}
+{"Name":"Turmakul","Coordinates":{"X":-79.1875,"Y":64.25,"Z":-33.875}}
+{"Name":"Tyche","Coordinates":{"X":25.21875,"Y":43.96875,"Z":-28.6875}}
+{"Name":"Tyr","Coordinates":{"X":-79.625,"Y":21.25,"Z":-25.0625}}
+{"Name":"Udegoci","Coordinates":{"X":-70.0,"Y":51.71875,"Z":-54.5}}
+{"Name":"V1090 Herculis","Coordinates":{"X":-44.9375,"Y":36.9375,"Z":13.46875}}
+{"Name":"V2151 Cygni","Coordinates":{"X":-63.75,"Y":3.65625,"Z":-5.59375}}
+{"Name":"V417 Hydrae","Coordinates":{"X":61.65625,"Y":44.0,"Z":-20.125}}
+{"Name":"V419 Hydrae","Coordinates":{"X":62.625,"Y":30.625,"Z":2.78125}}
+{"Name":"V538 Aurigae","Coordinates":{"X":-14.25,"Y":8.625,"Z":-36.4375}}
+{"Name":"V740 Cassiopeiae","Coordinates":{"X":-86.1875,"Y":7.15625,"Z":-47.78125}}
+{"Name":"V886 Centauri","Coordinates":{"X":45.15625,"Y":12.125,"Z":26.96875}}
+{"Name":"V989 Cassiopeiae","Coordinates":{"X":-45.375,"Y":6.78125,"Z":-39.625}}
+{"Name":"Vega","Coordinates":{"X":-21.90625,"Y":8.125,"Z":9.0}}
+{"Name":"Veneri","Coordinates":{"X":35.6875,"Y":54.125,"Z":20.09375}}
+{"Name":"Verboni","Coordinates":{"X":-98.71875,"Y":22.5,"Z":-60.34375}}
+{"Name":"Vetr","Coordinates":{"X":-59.0625,"Y":12.65625,"Z":1.46875}}
+{"Name":"VZ Corvi","Coordinates":{"X":39.6875,"Y":50.4375,"Z":25.59375}}
+{"Name":"Wadjuk","Coordinates":{"X":-50.59375,"Y":49.84375,"Z":-45.8125}}
+{"Name":"Wakarendians","Coordinates":{"X":-134.5,"Y":35.28125,"Z":-26.21875}}
+{"Name":"Wanggu","Coordinates":{"X":-132.71875,"Y":30.96875,"Z":-39.59375}}
+{"Name":"Wathlanukh","Coordinates":{"X":-149.21875,"Y":5.25,"Z":-60.6875}}
+{"Name":"Wei Jung","Coordinates":{"X":-124.71875,"Y":14.28125,"Z":-29.1875}}
+{"Name":"Wen Tsakimori","Coordinates":{"X":-98.3125,"Y":64.34375,"Z":-47.40625}}
+{"Name":"Widjararappan","Coordinates":{"X":-130.84375,"Y":41.8125,"Z":-21.78125}}
+{"Name":"Widjigarasir","Coordinates":{"X":-141.9375,"Y":45.75,"Z":-10.46875}}
+{"Name":"Wikmeang","Coordinates":{"X":-135.71875,"Y":20.8125,"Z":-43.0625}}
+{"Name":"WISE 1506+7027","Coordinates":{"X":-7.375,"Y":7.09375,"Z":-2.4375}}
+{"Name":"WISE 1647+5632","Coordinates":{"X":-21.59375,"Y":17.71875,"Z":1.75}}
+{"Name":"Wolf 1409","Coordinates":{"X":-56.125,"Y":29.8125,"Z":9.0625}}
+{"Name":"Wolf 1478","Coordinates":{"X":9.5,"Y":24.15625,"Z":23.875}}
+{"Name":"Wolf 1481","Coordinates":{"X":5.1875,"Y":13.375,"Z":13.5625}}
+{"Name":"Wolf 248","Coordinates":{"X":2.78125,"Y":60.3125,"Z":-0.4375}}
+{"Name":"Wolf 294","Coordinates":{"X":1.0,"Y":4.9375,"Z":-17.53125}}
+{"Name":"Wolf 359","Coordinates":{"X":3.875,"Y":6.46875,"Z":-1.90625}}
+{"Name":"Wolf 369","Coordinates":{"X":30.625,"Y":50.375,"Z":-8.875}}
+{"Name":"Wolf 393","Coordinates":{"X":29.65625,"Y":49.4375,"Z":-4.9375}}
+{"Name":"Wolf 417","Coordinates":{"X":13.6875,"Y":42.0625,"Z":4.8125}}
+{"Name":"Wolf 424","Coordinates":{"X":4.21875,"Y":13.28125,"Z":1.4375}}
+{"Name":"Wolf 437","Coordinates":{"X":7.0,"Y":26.0,"Z":4.375}}
+{"Name":"Wolf 46","Coordinates":{"X":-27.03125,"Y":-0.125,"Z":-18.625}}
+{"Name":"Wolf 485a","Coordinates":{"X":22.90625,"Y":46.71875,"Z":27.28125}}
+{"Name":"Wolf 497","Coordinates":{"X":0.125,"Y":41.46875,"Z":11.96875}}
+{"Name":"Wolf 54","Coordinates":{"X":-39.90625,"Y":1.1875,"Z":-27.9375}}
+{"Name":"Wolf 562","Coordinates":{"X":1.46875,"Y":12.84375,"Z":15.5625}}
+{"Name":"Wolf 654","Coordinates":{"X":-28.46875,"Y":22.40625,"Z":14.8125}}
+{"Name":"Wosyra Pao","Coordinates":{"X":11.53125,"Y":31.375,"Z":-13.9375}}
+{"Name":"Wu Gondru","Coordinates":{"X":-132.6875,"Y":23.15625,"Z":-20.125}}
+{"Name":"Wunian","Coordinates":{"X":-130.0625,"Y":18.375,"Z":-32.9375}}
+{"Name":"Wunjo","Coordinates":{"X":-65.0,"Y":53.3125,"Z":-22.59375}}
+{"Name":"WX Ursa Majoris","Coordinates":{"X":-1.40625,"Y":14.15625,"Z":-6.875}}
+{"Name":"Wyrd","Coordinates":{"X":-11.625,"Y":31.53125,"Z":-3.9375}}
+{"Name":"Xelabara","Coordinates":{"X":-93.40625,"Y":66.0625,"Z":-44.96875}}
+{"Name":"Xi Ursae Majoris","Coordinates":{"X":2.65625,"Y":27.09375,"Z":-9.9375}}
+{"Name":"Xi Wangkala","Coordinates":{"X":-135.65625,"Y":35.3125,"Z":-29.84375}}
+{"Name":"Xolotl","Coordinates":{"X":-21.53125,"Y":43.5,"Z":-41.65625}}
+{"Name":"Yakan","Coordinates":{"X":-140.84375,"Y":45.9375,"Z":-12.53125}}
+{"Name":"Yakawana","Coordinates":{"X":-103.09375,"Y":35.46875,"Z":-31.28125}}
+{"Name":"Ya'Nomisiyaces","Coordinates":{"X":41.34375,"Y":13.28125,"Z":-9.6875}}
+{"Name":"Yanyan","Coordinates":{"X":-40.3125,"Y":42.40625,"Z":-8.46875}}
+{"Name":"Yarigui","Coordinates":{"X":-72.5625,"Y":2.5625,"Z":-25.84375}}
+{"Name":"Ye'kuapemas","Coordinates":{"X":-70.15625,"Y":44.625,"Z":-33.65625}}
+{"Name":"Yeru Bao Hinu","Coordinates":{"X":-92.53125,"Y":8.40625,"Z":-33.84375}}
+{"Name":"Yoruba","Coordinates":{"X":-46.0,"Y":35.84375,"Z":-34.21875}}
+{"Name":"Yuggsanawyddis","Coordinates":{"X":-150.96875,"Y":67.03125,"Z":-37.8125}}
+{"Name":"Yugusitanitou","Coordinates":{"X":-77.09375,"Y":58.59375,"Z":-52.9375}}
+{"Name":"Zangi","Coordinates":{"X":42.0625,"Y":55.6875,"Z":-9.9375}}
+{"Name":"Zaraluvul","Coordinates":{"X":-4.875,"Y":64.21875,"Z":-0.8125}}
+{"Name":"Zenmaku","Coordinates":{"X":-90.46875,"Y":19.375,"Z":-62.71875}}
+{"Name":"Zeta Herculis","Coordinates":{"X":-21.34375,"Y":22.375,"Z":16.25}}
+{"Name":"Zombardgriti","Coordinates":{"X":-132.28125,"Y":31.40625,"Z":-39.625}}
+{"Name":"Zombo","Coordinates":{"X":-139.5625,"Y":30.375,"Z":-20.90625}}
+{"Name":"Zopiates","Coordinates":{"X":-145.0625,"Y":63.28125,"Z":-33.875}}
+{"Name":"Zosma","Coordinates":{"X":16.0625,"Y":53.875,"Z":-15.84375}}
