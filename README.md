@@ -24,10 +24,10 @@ etc
 
 
 ##Still to do before it's usable:
-Make a VA command template for users to import, and actually test it using VoiceAttack
+*Make a VA command template for users to import, and actually test it using VoiceAttack
 
 ##Features to add:
-Ability to exclude systems (i.e. anarchy systems, or systems without a base to refuel at)
-Ability to ask for closest system of type X (ie closest High Tech system, or closest Federation system)
-Integration with an E:D trading tool to ask for best place to sell commodity X
-Ability to save commodity information ("this system has a high demand for Auto Fabricators")
+*Ability to exclude systems (i.e. anarchy systems, or systems without a base to refuel at)
+*Ability to ask for closest system of type X (ie closest High Tech system, or closest Federation system)
+*Integration with an E:D trading tool to ask for best place to sell commodity X
+*Ability to save commodity information ("this system has a high demand for Auto Fabricators")
