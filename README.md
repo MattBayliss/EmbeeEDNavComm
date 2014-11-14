@@ -10,6 +10,7 @@ Relies heavily on the Elite:Dangerous Star Coordinator (EDSC) API [http://www.ed
 So far the plugin accepts current system, target system, and jump range parameters, and returns information on which system you should jump to next, or error messages if no routes have been found, or information is missing.
 
 Examples of proposed usage (made up route, not accurate):
+```
 > "current system Eranin"
 < "currently in Eranin"
 > "jump range 8.0"
@@ -18,14 +19,14 @@ Examples of proposed usage (made up route, not accurate):
 < "course set for CE Bootis. That will take 7 jumps. First jump is Aulin"
 > "I'm in Aulin"
 < "next jump is Styx - 6 jumps to go until CE Bootis"
-
+```
 etc
 
 
-Still to do before it's usable:
+##Still to do before it's usable:
 Make a VA command template for users to import, and actually test it using VoiceAttack
 
-Features to add:
+##Features to add:
 Ability to exclude systems (i.e. anarchy systems, or systems without a base to refuel at)
 Ability to ask for closest system of type X (ie closest High Tech system, or closest Federation system)
 Integration with an E:D trading tool to ask for best place to sell commodity X
