@@ -54,11 +54,10 @@ namespace EmbeeEDTests
 
             var starpaths = new StarPaths(new List<StarPath> { path1, path2 });
 
-            //doubled for there and back
-            Assert.AreEqual(4, starpaths.Count);
+            Assert.AreEqual(2, starpaths.Count);
 
             // this will swap the order
-            var fromto2 = starpaths.PopPathsFromSystem("to2");
+            var fromto2 = starpaths.GetPathsFromSystem("to2");
 
             Assert.AreEqual(1, fromto2.Count);
 
@@ -66,10 +65,7 @@ namespace EmbeeEDTests
 
             starpaths.RemovePath(fromto2[0]);
 
-            Assert.AreEqual(3, starpaths.Count);
-
-            var fromto1 = starpaths.PopPathsFromSystem("to1");
-            Assert.AreEqual(1, fromto1.Count);
+            Assert.AreEqual(1, starpaths.Count);
         }
 
         [TestMethod]

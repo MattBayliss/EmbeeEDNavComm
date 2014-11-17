@@ -14,12 +14,6 @@ namespace EmbeePathFinder
         public StarPaths(IEnumerable<StarPath> availablePaths)
         {
             _availablePaths = availablePaths.ToList();
-            _availablePaths.AddRange(availablePaths.Select(p =>
-            {
-                var n = (StarPath)p.Clone();
-                n.SwapDirection();
-                return n;
-            }).ToList());
         }
 
         public int Count { get { return _availablePaths.Count; } }
@@ -28,21 +22,14 @@ namespace EmbeePathFinder
         public List<StarPath> GetPathsFromSystem(string systemName)
         {
             var lname = systemName.ToLower();
-            return _availablePaths.Where(s => s.From.ToLower() == lname).ToList();
-        }
-
-        public List<StarPath> PopPathsFromSystem(string systemName) {
-            var lname = systemName.ToLower();
-            var popped = new List<StarPath>();
             var paths = _availablePaths.Where(s => s.From.ToLower() == lname).ToList();
+            paths.AddRange(_availablePaths.Where(s => s.To.ToLower() == lname).Select(s =>
+                {
+                    s.SwapDirection();
+                    return s;
+                }).ToList());
 
-            foreach(var p in paths)
-            {
-                popped.Add(p);
-                _availablePaths.Remove(p);
-            }
-
-            return popped;
+            return paths;
         }
 
         public void RemoveAll(Func<StarPath, bool> predicate)
