@@ -10,8 +10,8 @@ namespace EmbeeEDNav
         private static NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
         public const string COND_NAVCOMMAND = "embee.NavCommand";
-        public const string TEXT_NAVVALUE = "embee.NavText";
-        public const string TEXT_VOICERESPONSE = "embee.VoiceReponse";
+        public const string TEXT_NAVVALUE = "embee.NavValue";
+        public const string TEXT_VOICERESPONSE = "embee.VoiceResponse";
         public const string TEXT_TARGETSYSTEM = "embee.TargetSystem";
         public const string TEXT_CURRENTSYSTEM = "embee.CurrentSystem";
         public const string TEXT_NEXTSYSTEM = "embee.NextSystem";
@@ -92,6 +92,12 @@ namespace EmbeeEDNav
             {
                 case NavCommandEnum.TargetSystem:
                     textValues.SetValue(TEXT_TARGETSYSTEM, navvalue);
+                    break;
+                case NavCommandEnum.CurrentSystem:
+                    textValues.SetValue(TEXT_CURRENTSYSTEM, navvalue);
+                    break;
+                case NavCommandEnum.JumpRange:
+                    textValues.SetValue(TEXT_JUMPRANGE, navvalue);
                     break;
                 default:
                     break;

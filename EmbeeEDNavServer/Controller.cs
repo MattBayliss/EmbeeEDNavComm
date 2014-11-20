@@ -364,6 +364,16 @@ namespace EmbeeEDNavServer
 
             msg.NextSystem = step.To;
 
+            var jumps = route.Jumps;
+            if (jumps == 1)
+            {
+                msg.Value = string.Format("{0} is within range - we can jump straight there", route.To);
+            }
+            else
+            {
+                msg.Value = string.Format("A {0} jump route has been plotted to {1}. For the first leg, jump to {2}", jumps, route.To, msg.NextSystem);
+            }
+
             return msg;
         }
 
