@@ -6,29 +6,35 @@ using System.Threading.Tasks;
 
 namespace EmbeeEDModel.Entities
 {
-    public class StarPath : ICloneable
+    public class StarPath
     {
-        private string[] _systemNames;
+        private StarSystem[] _systems;
         private double _distance;
 
         public double Distance { get { return _distance; } }
-        public string From { get { return _systemNames[0]; } }
-        public string To { get { return _systemNames[1]; } }
+        public StarSystem From { get { return _systems[0]; } }
+        public StarSystem To { get { return _systems[1]; } }
 
-        public StarPath(string from, string to, double distance)
+        public StarPath(StarSystem from, StarSystem to)
         {
-            _systemNames = new string[] { from, to };
-            _distance = distance;
+            _systems = new StarSystem[] { from, to };
+            _distance = from.Coordinates.DistanceTo(to.Coordinates);
+
         }
 
-        public void SwapDirection()
+        public virtual void SwapDirection()
         {
-            Array.Reverse(_systemNames);
+            Array.Reverse(_systems);
         }
 
-        public virtual object Clone()
+        public double ProjectionOn(Coordinates target)
         {
-            return new StarPath(From, To, Distance);
+            //vector from Start to target
+            var targetVector = new Coordinates(target.X - From.Coordinates.X, target.Y - From.Coordinates.Y, target.Z - From.Coordinates.Z);
+            var pathVector = new Coordinates(To.Coordinates.X - From.Coordinates.X, To.Coordinates.Y - From.Coordinates.Y, To.Coordinates.Z - From.Coordinates.Z);
+
+            //projection of path onto target vector
+            return pathVector.DotProduct(targetVector) / targetVector.Length;
         }
     }
 }

@@ -29,9 +29,19 @@ namespace EmbeeEDModel.Entities
             return new Coordinates(X,Y,Z);
         }
 
+        public double Length
+        {
+            get { return DistanceTo(new Coordinates(0, 0, 0)); }
+        }
+
         public double DistanceTo(Coordinates coords)
         {
             return Math.Sqrt(Sqrd(coords.X - X) + Sqrd(coords.Y - Y) + Sqrd(coords.Z - Z));
+        }
+
+        public double DotProduct(Coordinates other)
+        {
+            return X * other.X + Y * other.Y + Z * other.Z;
         }
 
         private double Sqrd(double x)

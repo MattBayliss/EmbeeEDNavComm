@@ -160,16 +160,16 @@ namespace EmbeeEDNavServer
                     var route = _jumpRoutes[msg.CourseId];
 
                     // check to see if we reached the target
-                    if (route.To.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
+                    if (route.To.Name.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
                     {
                         msg.NextSystem = string.Empty;
                         _jumpRoutes.Remove(msg.CourseId);
                         msg.CourseId = null;
                         msg.Value = "You have reached your destination";
                     }
-                    else if (route.From.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
+                    else if (route.From.Name.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
                     {
-                        msg.NextSystem = route.To;
+                        msg.NextSystem = route.To.Name;
                         msg.Value = string.Format("jump to your destination, {0}", msg.NextSystem);
                     }
                     else
@@ -178,10 +178,10 @@ namespace EmbeeEDNavServer
                         bool keeplooking = true;
                         while (keeplooking)
                         {
-                            if (jump.From.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
+                            if (jump.From.Name.Equals(msg.CurrentSystem, StringComparison.OrdinalIgnoreCase))
                             {
                                 keeplooking = false;
-                                msg.NextSystem = route.To;
+                                msg.NextSystem = route.To.Name;
                                 msg.Value = string.Format("jump to your destination, {0}", msg.NextSystem);
                             }
                             else if (jump.Previous == null)
@@ -265,12 +265,12 @@ namespace EmbeeEDNavServer
             _jumpRoutes.Add(msg.CourseId, route);
 
             var step = route;
-            while ((!step.From.Equals(current, StringComparison.OrdinalIgnoreCase)) && (step.Previous != null))
+            while ((!step.From.Name.Equals(current, StringComparison.OrdinalIgnoreCase)) && (step.Previous != null))
             {
                 step = step.Previous;
             }
 
-            msg.NextSystem = step.To;
+            msg.NextSystem = step.To.Name;
 
             return msg;
         }
@@ -304,7 +304,7 @@ namespace EmbeeEDNavServer
                 if (_jumpRoutes.ContainsKey(msg.CourseId))
                 {
                     oldRoute = _jumpRoutes[msg.CourseId];
-                    target = oldRoute.To;
+                    target = oldRoute.To.Name;
                 }
             }
 
@@ -357,12 +357,12 @@ namespace EmbeeEDNavServer
             }
 
             var step = route;
-            while ((!step.From.Equals(current, StringComparison.OrdinalIgnoreCase)) && (step.Previous != null))
+            while ((!step.From.Name.Equals(current, StringComparison.OrdinalIgnoreCase)) && (step.Previous != null))
             {
                 step = step.Previous;
             }
 
-            msg.NextSystem = step.To;
+            msg.NextSystem = step.To.Name;
 
             var jumps = route.Jumps;
             if (jumps == 1)

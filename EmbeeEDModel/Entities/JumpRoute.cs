@@ -9,7 +9,7 @@ namespace EmbeeEDModel.Entities
     public class JumpRoute : StarPath, ICloneable
     {
         public JumpRoute(StarPath path)
-            : base(path.From, path.To, path.Distance)
+            : base(path.From, path.To)
         { }
 
         public JumpRoute Previous { get; set; }
@@ -26,6 +26,22 @@ namespace EmbeeEDModel.Entities
                 {
                     return Previous.Jumps + 1;
                 }
+            }
+        }
+
+        public int JumpsTo(string systemName)
+        {
+            if (To.Name.Equals(systemName, StringComparison.OrdinalIgnoreCase))
+            {
+                return this.Jumps;
+            }
+            else if(Previous != null)
+            {
+                return Previous.JumpsTo(systemName);
+            }
+            else
+            {
+                throw new ArgumentException("systemName is not in the route: " + systemName);
             }
         }
 
@@ -48,17 +64,17 @@ namespace EmbeeEDModel.Entities
         {
             if (Previous == null)
             {
-                return string.Format("{0} > {1}", From, To);
+                return string.Format("{0} > {1}", From.Name, To.Name);
             }
             else
             {
-                return string.Format("{0} > {1}", Previous.ToString(), To);
+                return string.Format("{0} > {1}", Previous.ToString(), To.Name);
             }
         }
 
         public object Clone()
         {
-            var route = new JumpRoute(new StarPath(this.From, this.To, this.Distance));
+            var route = new JumpRoute(new StarPath(this.From, this.To));
             if (Previous != null)
             {
                 route.Previous = (JumpRoute)this.Previous.Clone();

@@ -97,7 +97,7 @@ namespace EmbeeEDModel.Entities
                         var distance = stara.Coordinates.DistanceTo(starb.Coordinates);
                         if (distance < range)
                         {
-                            systems.Add(new StarPath(stara.Name, starb.Name, distance));
+                            systems.Add(new StarPath(stara, starb));
                         }
                     }
                 }

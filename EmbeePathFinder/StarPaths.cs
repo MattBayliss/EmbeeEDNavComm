@@ -9,35 +9,39 @@ namespace EmbeePathFinder
 {
     public class StarPaths
     {
-        private List<StarPath> _availablePaths;
+        private List<PathProjection> _availablePaths;
 
-        public StarPaths(IEnumerable<StarPath> availablePaths)
+        public StarPaths(IEnumerable<StarPath> availablePaths, StarSystem targetSystem)
         {
-            _availablePaths = availablePaths.ToList();
+            _availablePaths = availablePaths.Select(s => new PathProjection(s.From, s.To, targetSystem.Coordinates)).ToList();
         }
 
         public int Count { get { return _availablePaths.Count; } }
 
-
-        public List<StarPath> GetPathsFromSystem(string systemName)
+        /// <summary>
+        /// Gets paths from a system, ordered by those most directly heading to the target coordinates
+        /// </summary>
+        /// <param name="systemName"></param>
+        /// <returns></returns>
+        public List<PathProjection> GetPathsFromSystem(string systemName, Coordinates target)
         {
             var lname = systemName.ToLower();
-            var paths = _availablePaths.Where(s => s.From.ToLower() == lname).ToList();
-            paths.AddRange(_availablePaths.Where(s => s.To.ToLower() == lname).Select(s =>
+            var paths = _availablePaths.Where(s => s.From.Name.ToLower() == lname).ToList();
+            paths.AddRange(_availablePaths.Where(s => s.To.Name.ToLower() == lname).Select(s =>
                 {
                     s.SwapDirection();
                     return s;
                 }).ToList());
 
-            return paths;
+            return paths.OrderByDescending(p => p.Projection).ThenBy(p => p.Distance).ToList();
         }
 
-        public void RemoveAll(Func<StarPath, bool> predicate)
+        public void RemoveAll(Func<PathProjection, bool> predicate)
         {
             _availablePaths.RemoveAll(p => predicate(p));
         }
 
-        public void RemovePath(StarPath path)
+        public void RemovePath(PathProjection path)
         {
             if (path != null)
             {
@@ -45,7 +49,7 @@ namespace EmbeePathFinder
             }
         }
 
-        public void RemovePaths(IEnumerable<StarPath> starPaths)
+        public void RemovePaths(IEnumerable<PathProjection> starPaths)
         {
             if (starPaths != null)
             {

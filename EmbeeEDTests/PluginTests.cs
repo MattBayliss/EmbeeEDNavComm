@@ -152,5 +152,31 @@ namespace EmbeeEDTests
             Assert.IsTrue(string.IsNullOrEmpty(_textValues[VAPlugin.TEXT_NEXTSYSTEM]));
 
         }
+
+
+        [TestMethod]
+        public void PlotRouteFromEraninToLave()
+        {
+            // from Galaxy Map, Fastest Routes
+            // LHS 262 to Melaie
+            // LHS 262 -> LHS 2211 -> YIN SECTOR CL-Y D143 -> WYRD -> MORGOR -> MELIAE
+            _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Eranin");
+            _textValues.SetValue(VAPlugin.TEXT_JUMPRANGE, string.Empty);
+
+            VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
+            Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Eranin", StringComparison.OrdinalIgnoreCase));
+
+            _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.JumpRange);
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "15.0");
+            VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
+
+            _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.TargetSystem);
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Lave");
+            VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
+
+        }
+
     }
 }

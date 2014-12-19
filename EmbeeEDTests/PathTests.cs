@@ -47,28 +47,6 @@ namespace EmbeeEDTests
         }
 
         [TestMethod]
-        public void StarPathsMethods()
-        {
-            var path1 = new StarPath("from1", "to1", 5);
-            var path2 = new StarPath("from2", "to2", 5);
-
-            var starpaths = new StarPaths(new List<StarPath> { path1, path2 });
-
-            Assert.AreEqual(2, starpaths.Count);
-
-            // this will swap the order
-            var fromto2 = starpaths.GetPathsFromSystem("to2");
-
-            Assert.AreEqual(1, fromto2.Count);
-
-            Assert.AreEqual("from2", fromto2[0].To);
-
-            starpaths.RemovePath(fromto2[0]);
-
-            Assert.AreEqual(1, starpaths.Count);
-        }
-
-        [TestMethod]
         public void ShortRoute()
         {
             var routes =_pathfinder.GetRoutes(6.0, "Alpha", "Charlie");
@@ -80,10 +58,10 @@ namespace EmbeeEDTests
             var prevrevroute = prevroute.Previous;
             Assert.IsNull(prevrevroute);
             Assert.AreEqual(2, route.Jumps);
-            Assert.AreEqual("Alpha", prevroute.From);
-            Assert.AreEqual("Zulu", prevroute.To);
-            Assert.AreEqual("Zulu", route.From);
-            Assert.AreEqual("Charlie", route.To);
+            Assert.AreEqual("Alpha", prevroute.From.Name);
+            Assert.AreEqual("Zulu", prevroute.To.Name);
+            Assert.AreEqual("Zulu", route.From.Name);
+            Assert.AreEqual("Charlie", route.To.Name);
         }
 
         [TestMethod]
@@ -97,11 +75,11 @@ namespace EmbeeEDTests
             var routeB = routes[1];
 
             //both end at Foxtrot
-            Assert.AreEqual("Foxtrot", routeA.To);
-            Assert.AreEqual("Foxtrot", routeB.To);
+            Assert.AreEqual("Foxtrot", routeA.To.Name);
+            Assert.AreEqual("Foxtrot", routeB.To.Name);
 
-            Assert.AreEqual("Echo", routeA.From);
-            Assert.AreEqual("Disco", routeB.From);
+            Assert.AreEqual("Echo", routeA.From.Name);
+            Assert.AreEqual("Disco", routeB.From.Name);
 
             var prevA = routeA.Previous;
             Assert.IsNotNull(prevA);
@@ -109,11 +87,11 @@ namespace EmbeeEDTests
             var prevB = routeB.Previous;
             Assert.IsNotNull(prevB);
 
-            Assert.AreEqual("Echo", prevA.To);
-            Assert.AreEqual("Disco", prevB.To);
+            Assert.AreEqual("Echo", prevA.To.Name);
+            Assert.AreEqual("Disco", prevB.To.Name);
 
-            Assert.AreEqual("Charlie", prevA.From);
-            Assert.AreEqual("Charlie", prevB.From);
+            Assert.AreEqual("Charlie", prevA.From.Name);
+            Assert.AreEqual("Charlie", prevB.From.Name);
             
         }
 
@@ -128,16 +106,16 @@ namespace EmbeeEDTests
 
             var fastestroute = routes.First();
 
-            Assert.AreEqual("J-5", fastestroute.To);
-            Assert.AreEqual("I-5", fastestroute.From);
-            Assert.AreEqual("H-5", fastestroute.Previous.From);
-            Assert.AreEqual("G-5", fastestroute.Previous.Previous.From);
-            Assert.AreEqual("F-5", fastestroute.Previous.Previous.Previous.From);
-            Assert.AreEqual("E-5", fastestroute.Previous.Previous.Previous.Previous.From);
-            Assert.AreEqual("D-5", fastestroute.Previous.Previous.Previous.Previous.Previous.From);
-            Assert.AreEqual("C-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.From);
-            Assert.AreEqual("B-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.Previous.From);
-            Assert.AreEqual("A-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.Previous.Previous.From);
+            Assert.AreEqual("J-5", fastestroute.To.Name);
+            Assert.AreEqual("I-5", fastestroute.From.Name);
+            Assert.AreEqual("H-5", fastestroute.Previous.From.Name);
+            Assert.AreEqual("G-5", fastestroute.Previous.Previous.From.Name);
+            Assert.AreEqual("F-5", fastestroute.Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("E-5", fastestroute.Previous.Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("D-5", fastestroute.Previous.Previous.Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("C-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("B-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("A-5", fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.Previous.Previous.From.Name);
             
             Assert.IsNull(fastestroute.Previous.Previous.Previous.Previous.Previous.Previous.Previous.Previous.Previous);
 

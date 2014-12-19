@@ -30,20 +30,20 @@ namespace EmbeePathFinder
         {
             var allpaths = _universe.SystemsInRange(maxJump);
 
-            var paths = new StarPaths(allpaths);
+            var paths = new StarPaths(allpaths, systemB);
 
-            var result = PlotRoutes(paths, systemA.Name, systemB.Name);
+            var result = PlotRoutes(paths, systemA.Name, systemB);
 
             return result.OrderBy(r => r.TotalDistance).ToList();
         }
 
 
-        private IEnumerable<JumpRoute> PlotRoutes(StarPaths availablePaths, string currentSystem, string targetSystem)
+        private IEnumerable<JumpRoute> PlotRoutes(StarPaths availablePaths, string currentSystem, StarSystem targetSystem)
         {
-            var fromstart = availablePaths.GetPathsFromSystem(currentSystem);
+            var fromstart = availablePaths.GetPathsFromSystem(currentSystem, targetSystem.Coordinates);
             var routes = new List<JumpRoute>();
 
-            if (currentSystem.Equals(targetSystem, StringComparison.OrdinalIgnoreCase))
+            if (currentSystem.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
             {
                 return null;
             }
@@ -51,7 +51,7 @@ namespace EmbeePathFinder
             foreach (var s in fromstart)
             {
                 // return straight away if we've already found our target
-                if (s.To.Equals(targetSystem, StringComparison.OrdinalIgnoreCase))
+                if (s.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
                 {
                     return new List<JumpRoute> { new JumpRoute(s) };
                 }
@@ -66,13 +66,13 @@ namespace EmbeePathFinder
                 routes.CopyTo(currentRoutes);
                 routes = new List<JumpRoute>();
                 foreach(var r in currentRoutes) {
-                    var nextJumps = availablePaths.GetPathsFromSystem(r.To);
+                    var nextJumps = availablePaths.GetPathsFromSystem(r.To.Name, targetSystem.Coordinates);
                     if (nextJumps.Count > 0)
                     {
                         var nextroutes = new List<JumpRoute>();
                         foreach (var nj in nextJumps)
                         {
-                            if (nj.To.Equals(targetSystem, StringComparison.OrdinalIgnoreCase))
+                            if (nj.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
                             {
                                 targetFound = true;
                                 var nextroute = new JumpRoute(nj);
@@ -98,11 +98,73 @@ namespace EmbeePathFinder
                     {
                         Logger.Trace("DEAD END:\t{0}", r.ToString());
                     }
-                    availablePaths.RemoveAll(sp => sp.To.ToLower() == r.From.ToLower());
+                    availablePaths.RemoveAll(sp => sp.To.Name.ToLower() == r.From.Name.ToLower());
                 }
             }
 
-            return routes.Where(r => r.To.ToLower() == targetSystem.ToLower()).ToList();
+            return routes.Where(r => r.To.Name.ToLower() == targetSystem.Name.ToLower()).ToList();
         }
+
+
+        private void RecursivePlotRoutes(Dictionary<string, List<JumpRoute>> routesThroughSystem, StarPaths availablePaths, JumpRoute currentRoute, StarSystem targetSystem)
+        {
+            if (currentRoute.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                Logger.Trace("FOUND:   \t{0}", currentRoute.ToString());
+                return;
+            }
+
+            var fromcurrent = availablePaths.GetPathsFromSystem(currentRoute.To.Name, targetSystem.Coordinates);
+
+            foreach (var s in fromcurrent)
+            {
+                var to = s.To.Name;
+
+                // see if new path is shorter than existing ones
+                var newroute = new JumpRoute(s);
+                newroute.Previous = currentRoute;
+
+                if(routesThroughSystem.ContainsKey(to)) {
+                    var sampleroute = routesThroughSystem[to].First();
+                    var existingjumps = sampleroute.JumpsTo(to);
+                    var newjumps = newroute.Jumps;
+
+                    if (existingjumps > newjumps)
+                    {
+                        //var oldroutes =  TODO: need to find old routes, and replace the start with 
+                        // the new route, and then stop this branch, because we've already checked
+                        // to the end of it previously
+                        
+                        Logger.Trace("SHORTER:   \t{0}", newroute.ToString());
+                        continue;
+                    }
+                    else if (existingjumps == newjumps)
+                    {
+                        //var oldroutes =  TODO: need to find old routes, and add this route 
+                        //  and then stop this branch, because we've already checked
+                        // to the end of it previously
+                        routesThroughSystem[to].Add(newroute);
+                        Logger.Trace("ALTERNATE:   \t{0}", newroute.ToString());
+                        continue;
+                    }
+                    else
+                    {
+                        // new route is longer, it ends here
+                        routesThroughSystem[to].Add(newroute);
+                        Logger.Trace("LONGER:   \t{0}", newroute.ToString());
+                        continue;
+                    }
+                }
+                else
+                {
+                    routesThroughSystem.Add(to, new List<JumpRoute>() { newroute });
+                }
+
+                RecursivePlotRoutes(routesThroughSystem, availablePaths, newroute, targetSystem);
+            }
+
+           
+        }
+
     }
 }
