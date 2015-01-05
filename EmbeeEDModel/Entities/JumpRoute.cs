@@ -29,6 +29,24 @@ namespace EmbeeEDModel.Entities
             }
         }
 
+        public IEnumerable<string> GetSystemNamesAfter(string systemName)
+        {
+            if(To.Name.Equals(systemName, StringComparison.OrdinalIgnoreCase)) {
+                return new List<string>();
+            } else if(From.Name.Equals(systemName, StringComparison.OrdinalIgnoreCase)) {
+                return new List<string>() { To.Name };
+            } else if (Previous == null)
+            {
+                throw new ApplicationException("System name isn't in route: " + systemName);
+            }
+            else
+            {
+                var names = new List<string>() { To.Name };
+                names.AddRange(Previous.GetSystemNamesAfter(systemName));
+                return names;
+            }
+        }
+
         public int JumpsTo(string systemName)
         {
             if (To.Name.Equals(systemName, StringComparison.OrdinalIgnoreCase))
@@ -69,6 +87,24 @@ namespace EmbeeEDModel.Entities
             else
             {
                 return string.Format("{0} > {1}", Previous.ToString(), To.Name);
+            }
+        }
+
+        public void ReplacePreviousRoute(JumpRoute newPreviousRoute)
+        {
+            if (Previous == null)
+            {
+                throw new ApplicationException("JumpRoute not found");
+            }
+
+            if (Previous.To.Name.Equals(newPreviousRoute.To.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                Previous = null;
+                Previous = newPreviousRoute;
+            }
+            else
+            {
+                Previous.ReplacePreviousRoute(newPreviousRoute);
             }
         }
 
