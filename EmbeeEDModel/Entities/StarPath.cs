@@ -12,7 +12,15 @@ namespace EmbeeEDModel.Entities
         private double _distance;
 
         public double Distance { get { return _distance; } }
-        public StarSystem From { get { return _systems[0]; } }
+        public StarSystem From
+        {
+            get { return _systems[0]; }
+            protected set
+            {
+                _systems[0] = value;
+            }
+        }
+
         public StarSystem To { get { return _systems[1]; } }
 
         public StarPath(StarSystem from, StarSystem to)

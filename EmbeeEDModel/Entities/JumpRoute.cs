@@ -8,11 +8,34 @@ namespace EmbeeEDModel.Entities
 {
     public class JumpRoute : StarPath, ICloneable
     {
+        private static long _lastRouteId = 0;
+        private long _routeId;
+        private JumpRoute _previous;
+
         public JumpRoute(StarPath path)
             : base(path.From, path.To)
-        { }
+        {
+            _lastRouteId = _routeId = _lastRouteId + 1;
+            _previous = null;
+        }
 
-        public JumpRoute Previous { get; set; }
+        public JumpRoute Previous
+        {
+            get
+            {
+                return _previous;
+            }
+            set
+            {
+                if (value != null)
+                {
+                    From = value.To;
+                }
+                _previous = value;
+            }
+        }
+
+        public long RouteId { get { return _routeId; } }
 
         public int Jumps
         {
@@ -78,33 +101,60 @@ namespace EmbeeEDModel.Entities
             }
         }
 
-        public override string ToString()
+        public IEnumerable<string> GetSystemNames()
         {
             if (Previous == null)
             {
-                return string.Format("{0} > {1}", From.Name, To.Name);
+                return new List<string>() { From.Name, To.Name };
             }
             else
             {
-                return string.Format("{0} > {1}", Previous.ToString(), To.Name);
+                var names = new List<string>() { To.Name };
+                names.InsertRange(0, Previous.GetSystemNames());
+                return names;
             }
         }
 
-        public void ReplacePreviousRoute(JumpRoute newPreviousRoute)
+        public override string ToString()
         {
-            if (Previous == null)
+            var names = GetSystemNames();
+            return string.Join(" > ", names);
+        }
+
+        public JumpRoute ReplacePreviousRoute(JumpRoute newPreviousRoute)
+        {
+            if (From.Name.Equals(newPreviousRoute.To.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                var replaced = Previous;
+                _previous = null;
+                Previous = newPreviousRoute;
+                return replaced;
+            }
+            else if (Previous == null)
             {
                 throw new ApplicationException("JumpRoute not found");
             }
-
-            if (Previous.To.Name.Equals(newPreviousRoute.To.Name, StringComparison.OrdinalIgnoreCase))
+            else
             {
-                Previous = null;
-                Previous = newPreviousRoute;
+                return Previous.ReplacePreviousRoute(newPreviousRoute);
+            }
+        }
+
+        public JumpRoute CopyRouteAfter(StarSystem from)
+        {
+            if (from.Name.Equals(this.From.Name, StringComparison.OrdinalIgnoreCase))
+            {
+                return new JumpRoute(new StarPath(from, this.To));
+            }
+            else if (Previous == null)
+            {
+                throw new ApplicationException("JumpRoute not found");
             }
             else
             {
-                Previous.ReplacePreviousRoute(newPreviousRoute);
+                var route = new JumpRoute(new StarPath(this.From, this.To));
+                route.Previous = this.Previous.CopyRouteAfter(from);
+                return route;
             }
         }
 
