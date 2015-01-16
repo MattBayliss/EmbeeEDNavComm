@@ -12,15 +12,7 @@ namespace EmbeeEDModel.Entities
         private double _distance;
 
         public double Distance { get { return _distance; } }
-        public StarSystem From
-        {
-            get { return _systems[0]; }
-            protected set
-            {
-                _systems[0] = value;
-            }
-        }
-
+        public StarSystem From { get { return _systems[0]; } }
         public StarSystem To { get { return _systems[1]; } }
 
         public StarPath(StarSystem from, StarSystem to)
@@ -40,9 +32,12 @@ namespace EmbeeEDModel.Entities
             //vector from Start to target
             var targetVector = new Coordinates(target.X - From.Coordinates.X, target.Y - From.Coordinates.Y, target.Z - From.Coordinates.Z);
             var pathVector = new Coordinates(To.Coordinates.X - From.Coordinates.X, To.Coordinates.Y - From.Coordinates.Y, To.Coordinates.Z - From.Coordinates.Z);
+            
+            targetVector.Normalise();
+            pathVector.Normalise();
 
             //projection of path onto target vector
-            return pathVector.DotProduct(targetVector) / targetVector.Length;
+            return pathVector.DotProduct(targetVector);
         }
     }
 }

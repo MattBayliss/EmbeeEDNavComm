@@ -44,6 +44,14 @@ namespace EmbeeEDModel.Entities
             return X * other.X + Y * other.Y + Z * other.Z;
         }
 
+        public void Normalise()
+        {
+            var length = Length;
+            X = X / length;
+            Y = Y / length;
+            Z = Z / length;
+        }
+
         private double Sqrd(double x)
         {
             return x * x;

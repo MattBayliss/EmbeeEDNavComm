@@ -39,69 +39,101 @@ namespace EmbeePathFinder
 
         private List<JumpRoute> PlotRoutes(StarPaths availablePaths, StarSystem startSystem, StarSystem targetSystem, double maxJump)
         {
-            var fromstart = availablePaths.GetPathsFromSystem(startSystem.Name, targetSystem.Coordinates);
-            var startroutes = new List<JumpRoute>();
-            var routesThroughSystem = new List<KeyValuePair<string, string>>();
+            var fromstart = availablePaths.GetPathsFromSystem(startSystem.Name, targetSystem.Coordinates).Select(s => new JumpRoute(s)).ToList();
+            var routesToSystem = new List<KeyValuePair<string, string>>();
             var jumpRoutes = new Dictionary<string, JumpRoute>();
 
-            foreach (var starpath in fromstart)
-            {
-                var jumproute = new JumpRoute(starpath);
-                var to = starpath.To.Name;
-                if (to.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
-                {
-                    //can reach it in one jump - don't go any further
-                    return new List<JumpRoute>() { jumproute };
-                }
-                routesThroughSystem.Add(new KeyValuePair<string, string>(to, jumproute.ToString()));
-                jumpRoutes.Add(jumproute.ToString(), jumproute);
-                startroutes.Add(jumproute);
-            }
             var minJumps = int.MaxValue;
-            foreach (var route in startroutes)
+
+            foreach (var jumproute in fromstart)
             {
-                RecursivePlotRoutes(jumpRoutes, routesThroughSystem, availablePaths, route, targetSystem, maxJump, ref minJumps);
+                RecursivePlotRoutes(jumpRoutes, routesToSystem, availablePaths, jumproute, targetSystem, maxJump, ref minJumps);
             }
-            return routesThroughSystem.Where(r => r.Key.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
-                                                .Select(r => r.Value).Distinct()
-                                                .Where(r => jumpRoutes.ContainsKey(r))
-                                                .Select(r => jumpRoutes[r]).ToList();
+
+            return routesToSystem.Where(r => r.Key.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
+                                       .Select(r => jumpRoutes[r.Value]).ToList();
         }
 
-        private void RecursivePlotRoutes(Dictionary<string, JumpRoute> jumpRoutes, List<KeyValuePair<string, string>> routesThroughSystem, StarPaths availablePaths, JumpRoute currentRoute, StarSystem targetSystem, double maxJump, ref int minJumps)
+        private void RecursivePlotRoutes(Dictionary<string, JumpRoute> jumpRoutes, List<KeyValuePair<string, string>> routesToSystem, StarPaths availablePaths, JumpRoute currentRoute, StarSystem targetSystem, double maxJump, ref int minJumps)
         {
-            Logger.Trace("CHECKING:   \t{0} [{1}]", currentRoute.ToString(), currentRoute.ToString());
+            var currentRouteId = currentRoute.ToString();
+            Logger.Trace("CHECKING:   \t{0}", currentRouteId);
 
-            if (currentRoute.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
+            var to = currentRoute.To.Name;
+
+            // make sure we haven't looped back
+            if (currentRoute.Previous != null)
             {
-                // reached the destination!
-                // don't need to check any other nodes
-                Logger.Trace("FOUND:   \t{0}", currentRoute.ToString());
-                minJumps = (new int[] { minJumps, currentRoute.Jumps }).Min();
-                return;
+                var previousystems = currentRoute.Previous.GetSystemNames();
+                if (previousystems.Contains(to))
+                {
+                    Logger.Trace("\tLOOPED:   \t{0}", currentRouteId);
+                    return;
+                }
             }
 
             var currentjumps = currentRoute.Jumps;
 
-            // if the route is already too long, abandon it
-            if (currentjumps >= minJumps) {
-                Logger.Trace("\tTOO LONG:   \t{0}", currentRoute.ToString());
-                KillRoute(jumpRoutes, routesThroughSystem, currentRoute);
-                return;
-            }
-
-            // can we reach the target with the jumps remaining?
-            if (minJumps < int.MaxValue)
+            // are there already routes to this system?
+            var alternateroutes = routesToSystem.Where(kvp => kvp.Key.Equals(to, StringComparison.OrdinalIgnoreCase)).Select(r => jumpRoutes[r.Value]).ToList();
+            if (alternateroutes.Count > 0)
             {
-                var jumpsLeft = minJumps - currentjumps;
-                var bestCaseDistance = maxJump * jumpsLeft;
-                var distanceLeft = currentRoute.To.Coordinates.DistanceTo(targetSystem.Coordinates);
-                if (bestCaseDistance < distanceLeft)
+                // if the current route is shorter than existing routes, delete the existing routes
+                // All alternate routes will be of the same length (longer ones are deleted)
+                var altroute = alternateroutes.First();
+                var altjumps = altroute.Jumps;
+                if (currentjumps < altjumps)
                 {
-                    Logger.Trace("\tTOO FAR:   \t{0}", currentRoute.ToString());
-                    KillRoute(jumpRoutes, routesThroughSystem, currentRoute);
+                    // Current route is shorter that existing ones - delete existing ones
+                    foreach (var route in alternateroutes)
+                    {
+                        var routeid = route.ToString();
+                        routesToSystem.RemoveAll(r => r.Value == routeid);
+                        jumpRoutes.Remove(routeid);
+                    }
+                }
+                else if (currentjumps > altjumps)
+                {
+                    // current route is longer than existing ones, ignore it
                     return;
                 }
+            }
+
+            // if we've made it to the target, no need to go further!
+            var reachedTarget = to.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase);
+            if (reachedTarget)
+            {
+                // reached the destination!
+                Logger.Trace("FOUND:   \t{0}", currentRouteId);
+                minJumps = (new int[] { minJumps, currentRoute.Jumps }).Min();
+            }
+            else
+            {
+                // can this route even make it to the target with the distance and jumps left?
+                if (minJumps < int.MaxValue)
+                {
+                    var jumpsLeft = minJumps - currentjumps;
+                    if (jumpsLeft <= 0)
+                    {
+                        Logger.Trace("\tTOO LONG:   \t{0}", currentRouteId);
+                        return;
+                    }
+                    var bestCaseDistance = maxJump * jumpsLeft;
+                    var distanceLeft = currentRoute.To.Coordinates.DistanceTo(targetSystem.Coordinates);
+                    if (bestCaseDistance < distanceLeft)
+                    {
+                        Logger.Trace("\tTOO FAR:   \t{0}", currentRouteId);
+                        return;
+                    }
+                }
+            }
+
+            routesToSystem.Add(new KeyValuePair<string, string>(to, currentRouteId));
+            jumpRoutes.Add(currentRouteId, currentRoute);
+
+            if (reachedTarget)
+            {
+                return;
             }
 
             var fromcurrent = availablePaths.GetPathsFromSystem(currentRoute.To.Name, targetSystem.Coordinates);
@@ -111,152 +143,18 @@ namespace EmbeePathFinder
             if (fromcurrent.Count <= 1)
             {
                 Logger.Trace("\tDEAD END");
-                KillRoute(jumpRoutes, routesThroughSystem, currentRoute);
                 return;
             }
 
             foreach (var s in fromcurrent)
             {
-                var to = s.To.Name;
-
-                // make sure the route isn't doubling back
-                var systems = currentRoute.GetSystemNames();
-                if (systems.Contains(to))
+                if (!s.To.Name.Equals(currentRoute.From.Name, StringComparison.OrdinalIgnoreCase))
                 {
-                    Logger.Trace("\tLOOPED:   \t{0} > {1}", currentRoute.ToString(), to);
-                    continue;
-                }
-
-                // see if new path is shorter than existing ones
-                var newroute = new JumpRoute(s);
-                newroute.Previous = currentRoute;
-                var newrouteid = newroute.ToString();
-                jumpRoutes.Add(newrouteid, newroute);
-
-                var routes = routesThroughSystem.Where(r => (r.Key.Equals(to, StringComparison.OrdinalIgnoreCase)) && (r.Value != currentRoute.ToString()))
-                                                .Select(r => r.Value).Distinct()
-                                                .Where(r => jumpRoutes.ContainsKey(r))
-                                                .Select(r => jumpRoutes[r]).ToList();
-
-                if (routes.Count > 0)
-                {
-                    var sampleroute = routes.First();
-                    var existingjumps = sampleroute.JumpsTo(to);
-                    var newjumps = currentjumps + 1;
-                    var totalroutes = routes.Count;
-
-                    if (existingjumps > newjumps)
-                    {
-                        Logger.Trace("\tSHORTER:   \t{0}", newroute.ToString());
-                        for (var i = 0; i < totalroutes; i++)
-                        {
-                            var route = routes[i];
-
-                            Logger.Trace("\t\tREPLACING:\t{0}", route.ToString());
-
-                            JumpRoute replaced;
-                            var oldrouteid = route.ToString();
-                            var oldjumps = route.Jumps;
-
-                            // clear the systems that the route used to go through
-                            replaced = route;
-                            KillRoute(jumpRoutes, routesThroughSystem, replaced);
-
-                            if (to.Equals(route.To.Name, StringComparison.OrdinalIgnoreCase))
-                            {
-                                routesThroughSystem.AddRange(GetSystemsRoutePassesThrough(newroute));
-                            }
-                            else
-                            {
-                                replaced = route.ReplacePreviousRoute(newroute);
-                                routesThroughSystem.AddRange(GetSystemsRoutePassesThrough(newroute));
-
-                                var replacedjumps = replaced.Jumps;
-                                if (replaced.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
-                                {
-                                    Logger.Trace("SHORTFOUND:   \t{0}", replaced.ToString());
-                                    if (replacedjumps < minJumps)
-                                    {
-                                        minJumps = replacedjumps;
-                                    }
-                                }
-                                else if ((oldjumps > minJumps) && (replacedjumps < minJumps))
-                                {
-                                    //this route may have been abandoned because it got too long - 
-                                    //but it's been shortened enough to be a contender again
-                                    Logger.Trace("SHORTENED:   \t{0}", replaced.ToString());
-                                    nextroutes.Add(replaced);
-                                }
-
-
-                            }
-
-                        }
-                    }
-                    else if (existingjumps == newjumps)
-                    {
-                        Logger.Trace("\tALTERNA:   \t{0}", newroute.ToString());
-                        for (var i = 0; i < totalroutes; i++)
-                        {
-                            var route = routes[i];
-
-                            if (to.Equals(route.To.Name, StringComparison.OrdinalIgnoreCase))
-                            {
-                                routesThroughSystem.AddRange(GetSystemsRoutePassesThrough(newroute));
-                            }
-                            else
-                            {
-                                var altroute = route.CopyRouteAfter(s.To);
-                                var routeid = altroute.ToString();
-
-                                var altprev = altroute;
-                                while (altprev != null)
-                                {
-                                    var altrouteid = altprev.ToString();
-                                    if (!jumpRoutes.ContainsKey(altrouteid))
-                                    {
-                                        jumpRoutes.Add(altrouteid, altprev);
-                                    }
-                                    altprev = altprev.Previous;
-                                }
-
-                                altroute.ReplacePreviousRoute(newroute);
-
-                                // register the alternate route's systems
-                                routesThroughSystem.AddRange(GetSystemsRoutePassesThrough(altroute));
-
-                                if (altroute.To.Name.Equals(targetSystem.Name, StringComparison.OrdinalIgnoreCase))
-                                {
-                                    Logger.Trace("ALTFOUND:   \t{0}", altroute.ToString());
-                                }
-                            }
-
-                        }
-                    }
-                    else
-                    {
-                        // new route is longer, it ends here
-                        Logger.Trace("\tLONGER:   \t{0}", newroute.ToString());
-                        KillRoute(jumpRoutes, routesThroughSystem, newroute);
-                    }
-                }
-                else
-                {
-                    // haven't seen this system yet
-                    var prevsystems = newroute.GetSystemNames();
-                    routesThroughSystem.Add(new KeyValuePair<string, string>(to, newrouteid));
-                    nextroutes.Add(newroute);
+                    var newroute = new JumpRoute(s);
+                    newroute.Previous = currentRoute;
+                    RecursivePlotRoutes(jumpRoutes, routesToSystem, availablePaths, newroute, targetSystem, maxJump, ref minJumps);
                 }
             }
-
-            foreach (var nextroute in nextroutes)
-            {
-                if (nextroute.Jumps < minJumps)
-                {
-                    RecursivePlotRoutes(jumpRoutes, routesThroughSystem, availablePaths, nextroute, targetSystem, maxJump, ref minJumps);
-                }
-            }
-
         }
 
         private List<KeyValuePair<string, string>> GetSystemsRoutePassesThrough(JumpRoute route)
@@ -266,13 +164,13 @@ namespace EmbeePathFinder
             return systems.ToList();
         }
 
-        private void KillRoute(Dictionary<string, JumpRoute> jumpRoutes, List<KeyValuePair<string, string>> routesThroughSystem, JumpRoute routeToKill)
+        private void KillRoute(Dictionary<string, JumpRoute> jumpRoutes, List<KeyValuePair<string, string>> routesToSystem, JumpRoute routeToKill)
         {
             var route = routeToKill;
             while (route != null)
             {
                 var routeId = route.ToString();
-                routesThroughSystem.RemoveAll(m => m.Value == routeId);
+                routesToSystem.RemoveAll(m => m.Value == routeId);
                 jumpRoutes.Remove(routeId);
                 route = route.Previous;
             }

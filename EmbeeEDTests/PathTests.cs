@@ -96,6 +96,59 @@ namespace EmbeeEDTests
         }
 
         [TestMethod]
+        public void ComplexPath()
+        {
+            //   C-D-E         // Path between A and G
+            //  /|    \        // Trying direct routes means the PathFinder should
+            // A-B     F-G     // go down the longer A-B-H route - B being the most direct route
+            //    \     \|     // from A, and H being the most direct route from B
+            //     H     L     //
+            //     |    /      // The true shortest route is A-C-D-E-F-G
+            //     I   K
+            //      \ /
+            //       J
+            var stars = new List<StarSystem>();
+
+            stars.Add(new StarSystem("C", 10, 10, 0));
+            stars.Add(new StarSystem("D", 20, 15, 0)); // a bit up so not reachable from B
+            stars.Add(new StarSystem("E", 30, 10, 0));
+
+            stars.Add(new StarSystem("A", 0, 0, 0));
+            stars.Add(new StarSystem("B", 10, 0, 0));
+            stars.Add(new StarSystem("F", 40, 0, 0));
+            stars.Add(new StarSystem("G", 50, 0, 0));
+
+            stars.Add(new StarSystem("H", 20, -10, 0));
+            stars.Add(new StarSystem("L", 50, -10, 0));
+
+            stars.Add(new StarSystem("I", 20, -20, 0));
+            stars.Add(new StarSystem("K", 40, -20, 0));
+
+            stars.Add(new StarSystem("J", 30, -30, 0));
+
+            var uni = new Universe(stars);
+            var pf = new PathFinder(uni);
+
+            // 14.2 is just big enough to include diagonals
+            var routes = pf.GetRoutes(14.2, "A", "G");
+
+            Assert.AreEqual(1, routes.Count);
+
+            Assert.AreEqual(5, routes[0].Jumps);
+
+            Assert.AreEqual("G", routes[0].To.Name);
+            Assert.AreEqual("F", routes[0].From.Name);
+            Assert.AreEqual("E", routes[0].Previous.From.Name);
+            Assert.AreEqual("D", routes[0].Previous.Previous.From.Name);
+            Assert.AreEqual("C", routes[0].Previous.Previous.Previous.From.Name);
+            Assert.AreEqual("A", routes[0].Previous.Previous.Previous.Previous.From.Name);
+
+            // total distance includes two diagonals, 3 straight bits
+            Assert.AreEqual(Math.Sqrt(200) * 2 + Math.Sqrt(125) * 2 + 10, routes[0].TotalDistance);
+        }
+
+
+        [TestMethod]
         public void LotsOfRoutes()
         {
             //using the grid for this test - the diagonals are 7.07 long, so a Jump range of 7.1 will include the diagonals

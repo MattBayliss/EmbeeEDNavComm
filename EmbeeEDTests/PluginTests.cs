@@ -76,77 +76,77 @@ namespace EmbeeEDTests
         public void PlotRouteAndDoIt()
         {
             // from Galaxy Map, Fastest Routes
-            // LHS 262 to Melaie
-            // LHS 262 -> LHS 2211 -> YIN SECTOR CL-Y D143 -> WYRD -> MORGOR -> MELIAE
+            // LHS 2651 to Melaie
+            // LHS 2651 - Loucetios - Meliae - Dahan - Asellus Primus - Eranin
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "LHS 262");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "LHS 2651");
             _textValues.SetValue(VAPlugin.TEXT_JUMPRANGE, string.Empty);
 
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("LHS 262", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("LHS 2651", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.JumpRange);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "12.0");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "21.17");
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.TargetSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "MELIAE");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Eranin");
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("LHS 2211", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("Loucetios", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "LHS 2211");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Loucetios");
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("LHS 2211", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Loucetios", StringComparison.OrdinalIgnoreCase));
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("YIN SECTOR CL-Y D143", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("Meliae", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "YIN SECTOR CL-Y D143");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Meliae");
             
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("YIN SECTOR CL-Y D143", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Meliae", StringComparison.OrdinalIgnoreCase));
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("WYRD", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("Dahan", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "WYRD");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Dahan");
 
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("WYRD", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Dahan", StringComparison.OrdinalIgnoreCase));
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("MORGOR", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("Asellus Primus", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "MORGOR");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Asellus Primus");
 
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("MORGOR", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Asellus Primus", StringComparison.OrdinalIgnoreCase));
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("MELIAE", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_NEXTSYSTEM].Equals("Eranin", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "MELIAE");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Eranin");
 
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("MELIAE", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Eranin", StringComparison.OrdinalIgnoreCase));
 
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_NEXTSYSTEM));
             Assert.IsTrue(string.IsNullOrEmpty(_textValues[VAPlugin.TEXT_NEXTSYSTEM]));
@@ -155,18 +155,15 @@ namespace EmbeeEDTests
 
 
         [TestMethod]
-        public void PlotRouteFromEraninToLave()
+        public void PlotRouteFromAliothToLave()
         {
-            // from Galaxy Map, Fastest Routes
-            // LHS 262 to Melaie
-            // LHS 262 -> LHS 2211 -> YIN SECTOR CL-Y D143 -> WYRD -> MORGOR -> MELIAE
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.CurrentSystem);
-            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Eranin");
+            _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "Alioth");
             _textValues.SetValue(VAPlugin.TEXT_JUMPRANGE, string.Empty);
 
             VAPlugin.VA_Invoke1("", ref _state, ref _conditions, ref _textValues, ref _extendedValues);
             Assert.IsTrue(_textValues.ContainsKey(VAPlugin.TEXT_CURRENTSYSTEM));
-            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Eranin", StringComparison.OrdinalIgnoreCase));
+            Assert.IsTrue(_textValues[VAPlugin.TEXT_CURRENTSYSTEM].Equals("Alioth", StringComparison.OrdinalIgnoreCase));
 
             _conditions.SetValue(VAPlugin.COND_NAVCOMMAND, (short)NavCommandEnum.JumpRange);
             _textValues.SetValue(VAPlugin.TEXT_NAVVALUE, "15.0");

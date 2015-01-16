@@ -8,30 +8,12 @@ namespace EmbeeEDModel.Entities
 {
     public class JumpRoute : StarPath, ICloneable
     {
-        private static long _lastRouteId = 0;
-        private JumpRoute _previous;
-
         public JumpRoute(StarPath path)
             : base(path.From, path.To)
         {
-            _previous = null;
         }
 
-        public JumpRoute Previous
-        {
-            get
-            {
-                return _previous;
-            }
-            set
-            {
-                if (value != null)
-                {
-                    From = value.To;
-                }
-                _previous = value;
-            }
-        }
+        public JumpRoute Previous { get; set; }
 
         public int Jumps
         {
@@ -122,7 +104,7 @@ namespace EmbeeEDModel.Entities
             if (From.Name.Equals(newPreviousRoute.To.Name, StringComparison.OrdinalIgnoreCase))
             {
                 var replaced = Previous;
-                _previous = null;
+                Previous = null;
                 Previous = newPreviousRoute;
                 return replaced;
             }
