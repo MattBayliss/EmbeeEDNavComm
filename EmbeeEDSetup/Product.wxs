@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="EmbeeEDSetup" Language="1033" Version="0.1.0.0" Manufacturer="Embee" UpgradeCode="925B4495-0118-454A-80D1-D0BEF08ED2D5">
+	<Product Id="*" Name="Embee Elite:Dangerous VAPlugin" Language="1033" Version="0.1.0.3" Manufacturer="Embee" UpgradeCode="B11B5E4C-50F6-42BA-8782-363B96857888">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />
@@ -9,22 +9,36 @@
 		<Feature Id="ProductFeature" Title="EmbeeEDSetup" Level="1">
 			<ComponentGroupRef Id="ProductComponents" />
 		</Feature>
+  
+    <Property Id="WIXUI_INSTALLDIR" Value="INSTALLFOLDER" />
+    <UIRef Id="WixUI_InstallDir" />
+  
 	</Product>
 
 	<Fragment>
 		<Directory Id="TARGETDIR" Name="SourceDir">
 			<Directory Id="ProgramFilesFolder">
-				<Directory Id="INSTALLFOLDER" Name="EmbeeEDSetup" />
+				<Directory Id="INSTALLFOLDER" Name="EmbeeED" />
 			</Directory>
 		</Directory>
 	</Fragment>
-
 	<Fragment>
 		<ComponentGroup Id="ProductComponents" Directory="INSTALLFOLDER">
-			<!-- TODO: Remove the comments around this Component element and the ComponentRef below in order to add resources to this installer. -->
-			<!-- <Component Id="ProductComponent"> -->
-				<!-- TODO: Insert files, registry keys, and other resources here. -->
-			<!-- </Component> -->
+      <Component Id="EmbeeEDNav" Guid="5C7F9B11-15BD-4134-91D0-95C2B2676BF6">
+        <File Id="EmbeeEDNavModel" Source="$(var.EmbeeEDModel.TargetPath)" />
+        <File Id="VAPlugin" Source="$(var.EmbeeEDNav.TargetPath)" />
+        <File Id="EmbeeEDNavServer" Source="$(var.EmbeeEDNavServer.TargetPath)" />
+        <File Id="EmbeePathFinder" Source="$(var.EmbeePathFinder.TargetPath)" />
+      </Component>
+      <Component Id="Dependencies" Guid="9D3A8953-9F76-4965-B8C7-C36BB17E7CA8">
+        <File Id="IpcLib" Source="$(var.IpcLib.TargetPath)" />
+        <File Id="Newtonsoft.Json" Source="$(var.EmbeeEDNavServer.TargetDir)Newtonsoft.Json.dll" />
+        <File Id="System.Reactive.Core" Source="$(var.EmbeeEDNavServer.TargetDir)System.Reactive.Core.dll" />
+      </Component>
+      <Component Id="NLog" Guid="6C025E8B-059B-4195-8A4D-8DF4418210D2">
+        <File Id="Nlog" Source="$(var.EmbeeEDNavServer.TargetDir)NLog.dll" />
+        <File Id="NlogConfig" Source="$(var.EmbeeEDNavServer.TargetDir)NLog.config" />
+      </Component>
 		</ComponentGroup>
 	</Fragment>
 </Wix>
