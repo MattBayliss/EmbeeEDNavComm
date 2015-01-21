@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
-	<Product Id="*" Name="Embee Elite:Dangerous VAPlugin" Language="1033" Version="0.1.0.3" Manufacturer="Embee" UpgradeCode="B11B5E4C-50F6-42BA-8782-363B96857888">
+	<Product Id="*" Name="Embee Elite:Dangerous VAPlugin" Language="1033" Version="0.1.0.4" Manufacturer="Embee" UpgradeCode="B11B5E4C-50F6-42BA-8782-363B96857888">
 		<Package InstallerVersion="200" Compressed="yes" InstallScope="perMachine" />
 
 		<MajorUpgrade DowngradeErrorMessage="A newer version of [ProductName] is already installed." />

@@ -76,6 +76,7 @@
     <Compile Include="PathTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PluginTests.cs" />
+    <Compile Include="RssTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\EmbeeEDModel\EmbeeEDModel.csproj">
@@ -93,6 +94,10 @@
     <ProjectReference Include="..\EmbeePathFinder\EmbeePathFinder.csproj">
       <Project>{737f055c-44d9-405d-b351-4b3ed27116cd}</Project>
       <Name>EmbeePathFinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmbeeRssReader\EmbeeRssReader.csproj">
+      <Project>{67a8debe-5f15-4001-8114-53e845d5c853}</Project>
+      <Name>EmbeeRssReader</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>

@@ -35,6 +35,9 @@ namespace EmbeeEDNavServer
             var stars = await starLoader.GetStarsAsync();
             _universe = new Universe(stars);
             _pathFinder = new PathFinder(_universe);
+
+            // TODO: this takes way too long, and doesn't seem to actually work
+            //AddSystemsToSpeechDictionary();
         }
 
         public async Task<string> ProcessMessageAsync(string incomingMessage)
@@ -390,6 +393,27 @@ namespace EmbeeEDNavServer
             }
         }
 
+        private void AddSystemsToSpeechDictionary()
+        {
+            var wordsToAdd = new List<string>();
+            foreach (var star in _universe.StarNames)
+            {
+                var words = star.Split(new char[] { ' ', '.', ',' });
+                foreach (var word in words)
+                {
+                    if (word.Length < 3) continue;
+
+                    long testnumber;
+                    if (long.TryParse(word, out testnumber))
+                    {
+                        continue;
+                    }
+                    wordsToAdd.Add(word);
+                }
+            }
+
+            EmbeeSpeechDictionaryUtils.SpeechUtilities.AddWords(wordsToAdd.Distinct().ToList());
+        }
 
 
     }

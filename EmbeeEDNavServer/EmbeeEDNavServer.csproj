@@ -115,6 +115,10 @@
       <Project>{737f055c-44d9-405d-b351-4b3ed27116cd}</Project>
       <Name>EmbeePathFinder</Name>
     </ProjectReference>
+    <ProjectReference Include="..\EmbeeSpeechDictionaryUtils\EmbeeSpeechDictionaryUtils.csproj">
+      <Project>{6bb5cd61-3ff3-4d3e-9782-90cbd67b91ef}</Project>
+      <Name>EmbeeSpeechDictionaryUtils</Name>
+    </ProjectReference>
     <ProjectReference Include="..\IpcLib\IpcLib.csproj">
       <Project>{67d434cf-4262-488d-ac19-fdabf9383f9c}</Project>
       <Name>IpcLib</Name>
