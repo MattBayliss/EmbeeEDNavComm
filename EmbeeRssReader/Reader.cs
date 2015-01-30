@@ -23,6 +23,7 @@ namespace EmbeeRssReader
             var entries = new List<RssEntry>();
             XmlReader reader = XmlReader.Create(_rssUrl, new XmlReaderSettings()
             {
+                
             });
             SyndicationFeed feed = SyndicationFeed.Load(reader);
             reader.Close();
@@ -34,7 +35,7 @@ namespace EmbeeRssReader
                 });
             }
 
-            return entries;
+            return entries.OrderBy(e => e.DatePosted).ToList();
         }
     }
 }

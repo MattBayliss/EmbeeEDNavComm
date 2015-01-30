@@ -84,6 +84,7 @@
     <Compile Include="Edsc\GetSystemsRequest.cs" />
     <Compile Include="Edsc\RequestFilter.cs" />
     <Compile Include="Edsc\Response.cs" />
+    <Compile Include="GalnetReader.cs" />
     <Compile Include="NamedPipeServer.cs" />
     <Compile Include="NavMessage.cs" />
     <Compile Include="Program.cs" />

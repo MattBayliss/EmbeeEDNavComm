@@ -15,7 +15,8 @@ namespace EmbeeEDTests
         [TestInitialize]
         public void Init()
         {
-            reader = new EmbeeRssReader.Reader("http://elitedangerous.com/news/galnet/rss");
+            reader = new EmbeeRssReader.Reader("https://gonegeeky.com/edproxy/");
+            //reader = new EmbeeRssReader.Reader("http://elitedangerous.com/news/galnet/rss");
         }
 
         [TestMethod]
