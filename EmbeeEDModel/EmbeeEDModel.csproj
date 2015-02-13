@@ -64,6 +64,7 @@
     <Compile Include="Entities\StarPath.cs" />
     <Compile Include="Entities\StarSystem.cs" />
     <Compile Include="Entities\Universe.cs" />
+    <Compile Include="Helpers\StringHelpers.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

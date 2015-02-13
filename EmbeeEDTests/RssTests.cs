@@ -1,6 +1,7 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -15,8 +16,7 @@ namespace EmbeeEDTests
         [TestInitialize]
         public void Init()
         {
-            reader = new EmbeeRssReader.Reader("https://gonegeeky.com/edproxy/");
-            //reader = new EmbeeRssReader.Reader("http://elitedangerous.com/news/galnet/rss");
+            reader = new EmbeeRssReader.Reader("http://elitedangerous.com/news/galnet/rss", Path.GetTempPath(), TimeSpan.FromHours(1));
         }
 
         [TestMethod]
@@ -35,5 +35,22 @@ namespace EmbeeEDTests
                 lastdate = entry.DatePosted;
             }
         }
+
+        public void GetNextUnread()
+        {
+            // clear the cache and all unread/read statuses
+            reader.ResetCache();
+
+            var datefrom = DateTime.Now.Subtract(TimeSpan.FromDays(14));
+
+            // entries should now be cached, and read/unread status tracked
+            var entries = reader.GetUnread();
+
+
+
+
+            
+        }
+
     }
 }
