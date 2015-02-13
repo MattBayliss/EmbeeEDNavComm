@@ -22,6 +22,7 @@ namespace EmbeeEDTests
         [TestMethod]
         public void ReadLastFortnight()
         {
+            reader.ResetCache();
             var datefrom = DateTime.Now.Subtract(TimeSpan.FromDays(14));
             var entries = reader.EntriesAfter(datefrom);
 
@@ -34,22 +35,6 @@ namespace EmbeeEDTests
                 Assert.IsTrue(entry.DatePosted >= lastdate);
                 lastdate = entry.DatePosted;
             }
-        }
-
-        public void GetNextUnread()
-        {
-            // clear the cache and all unread/read statuses
-            reader.ResetCache();
-
-            var datefrom = DateTime.Now.Subtract(TimeSpan.FromDays(14));
-
-            // entries should now be cached, and read/unread status tracked
-            var entries = reader.GetUnread();
-
-
-
-
-            
         }
 
     }

@@ -13,5 +13,6 @@ namespace EmbeeEDModel.Entities
         public DateTime DatePosted { get; set; }
         public string Title { get; set; }
         public string Body { get; set; }
+        public string Abstract { get; set; }
     }
 }

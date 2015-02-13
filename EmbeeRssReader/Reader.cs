@@ -123,10 +123,23 @@ namespace EmbeeRssReader
                         {
                             Id = item.Id,
                             Title = item.Title.Text,
-                            Body = item.Summary.Text,
                             DatePosted = item.PublishDate.DateTime,
                             Read = false
                         };
+
+                        if (item.Content != null)
+                        {
+                            var tsc = (TextSyndicationContent)item.Content;
+                            entry.Body = tsc.Text;
+                            if (item.Summary != null)
+                            {
+                                entry.Abstract = item.Summary.Text;
+                            }
+                        }
+                        else if (item.Summary != null)
+                        {
+                            entry.Body = item.Summary.Text;
+                        }
 
                         entries.Add(entry);
                         sw.WriteLine(JsonConvert.SerializeObject(entry));
