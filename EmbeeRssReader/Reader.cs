@@ -76,6 +76,16 @@ namespace EmbeeRssReader
             return _entries.Values.Where(e => e.DatePosted > dateFrom).OrderBy(e => e.DatePosted).ToList();
         }
 
+        public void MarkRead(string id)
+        {
+            if (_entries.ContainsKey(id))
+            {
+                _entries[id].Read = true;
+            }
+        }
+
+
+
         private void LoadEntries()
         {
             bool refresh = _lastCheckedOn.Add(_refreshInterval) < DateTime.Now;

@@ -37,5 +37,17 @@ namespace EmbeeEDTests
             }
         }
 
+        [TestMethod]
+        public void ReadRssEntry()
+        {
+            reader.ResetCache();
+            var unread = reader.GetUnread();
+            Assert.IsTrue(unread.Count() > 0);
+            var firstunreadid = unread.First().Id;
+            reader.MarkRead(firstunreadid);
+            var newunread = reader.GetUnread();
+            var newunreadids = newunread.Select(e => e.Id).ToList();
+            Assert.IsFalse(newunreadids.Contains(firstunreadid));
+        }
     }
 }
