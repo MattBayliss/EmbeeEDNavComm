@@ -79,6 +79,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Config.cs" />
     <Compile Include="Controller.cs" />
     <Compile Include="Edsc\DataWrapper.cs" />
     <Compile Include="Edsc\DateTimeConverter.cs" />
@@ -116,6 +117,10 @@
     <ProjectReference Include="..\EmbeePathFinder\EmbeePathFinder.csproj">
       <Project>{737f055c-44d9-405d-b351-4b3ed27116cd}</Project>
       <Name>EmbeePathFinder</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmbeeRssReader\EmbeeRssReader.csproj">
+      <Project>{67a8debe-5f15-4001-8114-53e845d5c853}</Project>
+      <Name>EmbeeRssReader</Name>
     </ProjectReference>
     <ProjectReference Include="..\EmbeeSpeechDictionaryUtils\EmbeeSpeechDictionaryUtils.csproj">
       <Project>{6bb5cd61-3ff3-4d3e-9782-90cbd67b91ef}</Project>

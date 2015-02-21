@@ -16,6 +16,7 @@ namespace EmbeeEDNavServer
         private double _jumpRange;
         private string _lastTarget;
         private string _current;
+        private GalnetReader _reader;
 
         private static NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
@@ -31,6 +32,7 @@ namespace EmbeeEDNavServer
 
         public async Task InitAsync()
         {
+            _reader = new GalnetReader();
             var starLoader = new StarLoader();
             var stars = await starLoader.GetStarsAsync();
             _universe = new Universe(stars);
@@ -65,6 +67,10 @@ namespace EmbeeEDNavServer
 
                     case CommandEnum.JumpRange:
                         msg = CommandJumpRange(msg);
+                        break;
+
+                    case CommandEnum.CheckNews:
+                        msg = CommandCheckNews(msg);
                         break;
 
                     default:
@@ -378,6 +384,31 @@ namespace EmbeeEDNavServer
             }
 
             return msg;
+        }
+
+        private NavMessage CommandCheckNews(NavMessage msg)
+        {
+            var outmsg = new NavMessage()
+            {
+                Command = CommandEnum.CheckNews,
+                CurrentSystem = msg.CurrentSystem                
+            };
+
+            var newnews = _reader.CheckForNews();
+            var numnews = newnews.Count();
+            if(numnews == 0) {
+                outmsg.Value = "there are no new GalNet stories";
+            }
+            else if (numnews == 1)
+            {
+                outmsg.Value = "there is one new GalNet story";
+            }
+            else
+            {
+                outmsg.Value = string.Format("there are {0} new GalNet stories", numnews);
+            }
+
+            return outmsg;
         }
 
         #endregion

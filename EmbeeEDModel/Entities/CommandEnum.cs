@@ -13,6 +13,8 @@ namespace EmbeeEDModel.Entities
         WhereIam = 2,
         NextSystem = 3,
         TargetSystem = 4,
-        JumpRange = 5
+        JumpRange = 5,
+        NextNews = 6,
+        CheckNews = 7
     }
 }

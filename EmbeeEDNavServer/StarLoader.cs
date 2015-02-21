@@ -26,11 +26,7 @@ namespace EmbeeEDNavServer
 
         public StarLoader()
         {
-            var appfolder = Path.Combine(System.Environment.GetFolderPath(Environment.SpecialFolder.ApplicationData), "EmbeeED");
-            if (!Directory.Exists(appfolder))
-            {
-                Directory.CreateDirectory(appfolder);
-            }
+            var appfolder = Config.GetAppDataPath();
             _cachedStarsPath = Path.Combine(appfolder, "CachedStars.json");
             _backupPath = Path.Combine(appfolder, "CachedStars.backup.json");
             _newStarsPath = Path.Combine(appfolder, "LatestStars.json");

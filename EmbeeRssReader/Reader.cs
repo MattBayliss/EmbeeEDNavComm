@@ -62,9 +62,9 @@ namespace EmbeeRssReader
             }
         }
 
-        public IEnumerable<RssEntry> GetUnread()
+        public IEnumerable<RssEntry> GetUnread(bool forceDownload = false)
         {
-            LoadEntries();
+            LoadEntries(forceDownload);
 
             return _entries.Values.Where(e => e.Read == false).OrderBy(e => e.DatePosted).ToList();
         }
@@ -86,10 +86,10 @@ namespace EmbeeRssReader
 
 
 
-        private void LoadEntries()
+        private void LoadEntries(bool forceDownload = false)
         {
             bool refresh = _lastCheckedOn.Add(_refreshInterval) < DateTime.Now;
-            bool getentries = refresh;
+            bool getentries = refresh || forceDownload;
             if (_entries == null)
             {
                 getentries = true;
