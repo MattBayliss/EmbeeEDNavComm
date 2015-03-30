@@ -7,34 +7,32 @@ namespace EmbeeEDNavServer
     {
         private static NLog.Logger Logger = NLog.LogManager.GetCurrentClassLogger();
 
-        [STAThread]
         static void Main(string[] args)
         {
             NamedPipeServer server = null;
-            //try
-            //{
-                var config = new Config();
+            try
+            {
                 var controller = new Controller();
                 server = new NamedPipeServer(controller, 8);
                 server.StartAsync().Wait();
-                var trayIcon = new SystemTray(config);
+                var trayIcon = new SystemTray();
                 Application.Run(trayIcon);
-            //}
-            //catch (AggregateException aex)
-            //{
-            //    Logger.Error("Critical error", aex);
-            //}
-            //catch (Exception ex)
-            //{
-            //    Logger.Error("Critical error", ex);
-            //}
-            //finally
-            //{
+            }
+            catch (AggregateException aex)
+            {
+                Logger.Error("Critical error", aex);
+            }
+            catch (Exception ex)
+            {
+                Logger.Error("Critical error", ex);
+            }
+            finally
+            {
                 if (server != null)
                 {
                     server.Stop();
                 }
-            //}
+            }
         }
     }
 }

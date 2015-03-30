@@ -13,25 +13,14 @@ namespace EmbeeEDNavServer
     {
         private NotifyIcon trayIcon;
         private ContextMenu trayMenu;
-        private Config _config;
 
-        public SystemTray(Config config)
+        public SystemTray()
         {
-            _config = config;
-
             var versionText = string.Format("Version {0}", Assembly.GetExecutingAssembly().GetName().Version);
 
             // Create a simple tray menu with only one item
             trayMenu = new ContextMenu();
-            
-            var settingsItem = new MenuItem()
-            {
-                Text = "Settings..."
-            };
-            settingsItem.Click += ShowSettings;
-
             trayMenu.MenuItems.Add(versionText).Enabled = false;
-            trayMenu.MenuItems.Add(settingsItem);
             trayMenu.MenuItems.Add("Exit", OnExit);
 
             trayIcon = new NotifyIcon();
@@ -46,12 +35,6 @@ namespace EmbeeEDNavServer
                 Icon = icon;
                 trayIcon.Icon = icon;
             }
-        }
-
-        void ShowSettings(object sender, EventArgs e)
-        {
-            var settingsform = new SettingsForm(_config);
-            settingsform.ShowDialog();
         }
 
         protected override void OnLoad(EventArgs e)
